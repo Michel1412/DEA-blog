@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -79,6 +79,11 @@
     {
       "id": "medjugorje-content",
       "description": "Página Medjugorje apresenta hero com foto local, cards e texto sobre as aparições",
+      "category": "content"
+    },
+    {
+      "id": "aparecida-content",
+      "description": "Página Aparecida apresenta hero com estátua, cards e história dos pescadores no Paraíba",
       "category": "content"
     }
   ]

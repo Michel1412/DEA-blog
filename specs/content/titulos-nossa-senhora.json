@@ -26,6 +26,14 @@
       "available": true
     },
     {
+      "slug": "nossa-senhora-aparecida",
+      "title": "Nossa Senhora Aparecida",
+      "description": "Padroeira do Brasil — achada no rio Paraíba do Sul em 1717.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-aparecida",
+      "emoji": "⭐",
+      "available": true
+    },
+    {
       "slug": "template",
       "title": "Modelo (Títulos de Nossa Senhora)",
       "description": "Página de referência aprovada para novas devoções marianas.",

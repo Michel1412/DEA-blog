@@ -20,6 +20,7 @@ alwaysApply: false
 |--------|--------|------|
 | 0.0.0 | Baseline (templates, navbar) | — |
 | 0.0.1 | Nossa Senhora em Medjugorje | `/titulos-nossa-senhora/nossa-senhora-medjugorje` |
+| 0.0.2 | Nossa Senhora Aparecida | `/titulos-nossa-senhora/nossa-senhora-aparecida` |
 
 ## Checklist obrigatório por versão
 

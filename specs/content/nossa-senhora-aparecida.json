@@ -1,0 +1,68 @@
+{
+  "slug": "nossa-senhora-aparecida",
+  "meta": {
+    "title": "Nossa Senhora Aparecida | Grupo Deus É Amor",
+    "description": "Padroeira do Brasil — história da aparição no rio Paraíba do Sul em 12 de outubro de 1717, símbolo de fé, esperança e proteção."
+  },
+  "hero": {
+    "title": "Nossa Senhora Aparecida",
+    "subtitle": "Padroeira do Brasil — 12 de outubro de 1717",
+    "quote": "Nossa Senhora Aparecida, o Brasil é vosso. Cuidai do Brasil.",
+    "backgroundImage": "/images/nossa-senhora-aparecida.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Padroeira do Brasil",
+      "variant": "highlight",
+      "paragraphs": [
+        "Nossa Senhora Aparecida é a aparição da Virgem Maria considerada padroeira do Brasil. Sua imagem foi encontrada por pescadores no rio Paraíba do Sul no dia 12 de outubro de 1717. Após o achado, ocorreram milagres atribuídos a ela, e a devoção cresceu em todo o país.",
+        "É símbolo de fé, esperança e proteção do povo brasileiro. Seu nome completo é Nossa Senhora da Conceição Aparecida, expressando o vínculo com a Imaculada Conceição e o modo como ela se manifestou: aparecendo aos humildes pescadores da região."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "O achado no rio Paraíba do Sul",
+      "paragraphs": [
+        "Imagine o rio calmo ao amanhecer, três canoas de madeira lado a lado e homens simples remando após uma noite inteira sem pesca. Em uma das embarcações, um pescador ergue nas mãos uma pequena imagem escura de barro — o corpo de Nossa Senhora — enquanto os companheiros olham com espanto e devoção. Mais adiante, a rede trará a cabeça da mesma imagem, unindo o que parecia perdido.",
+        "Em 1717, o Conde de Assumar, governador das Capitanias de São Paulo e Minas Gerais, pediu peixe aos pescadores João Alves, Felipe Pedroso e Domingos Garcia, pois, em sexta-feira, não comia carne. Os três saíram de canoas da região de Roseira. Depois de uma noite sem pesca, no Porto do Itaguaçu, João Alves encontrou o corpo da imagem e guardou-o.",
+        "Dois quilômetros adiante, no Porto de Correia Leite, lançaram a rede juntos e a cabeça da imagem ficou presa — fato que os maravilhou, pois era pequena demais para isso. Consideraram já um milagre. Ao pescarem de novo, recolheram tantos peixes que as redes quase se romperam. Naquele momento tiveram certeza de que aquela imagem era um grande sinal de Deus."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Uma imagem que fala sem palavras",
+      "paragraphs": [
+        "Diferente de outras aparições, Nossa Senhora Aparecida não pronunciou palavras; fala através da própria imagem. A estátua original tem cerca de 36 centímetros, feita de barro cozido no estilo barroco do século XVII — ou seja, a imagem é mais antiga que a data de seu achamento.",
+        "Ela aparece com as mãos unidas em oração, manto de rainha e túnica que remete à escrava do Senhor — gesto de humildade e de realeza ao mesmo tempo. O barro simboliza a redenção da humanidade: Maria partilha nossa natureza, porém é Santíssima.",
+        "Por isso tantos devotos, ao longo dos séculos, encontraram nela um rosto de acolhimento, especialmente os que sofriam na escravidão e na pobreza."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Da devoção popular à Basílica",
+      "paragraphs": [
+        "Ao voltarem da pesca, os pescadores fizeram um pequeno oratório na casa de Felipe Pedroso. A imagem passou ao filho Athanásio Pedroso, que construiu um oratório maior à beira da estrada dos tropeiros, e a devoção se espalhou.",
+        "Num sábado à noite, durante o terço, as velas apagaram-se sem vento e acenderam-se de novo por si — o milagre das velas. Em 1745, o padre de Guaratinguetá mandou erguer uma capela em honra a Nossa Senhora da Conceição Aparecida.",
+        "Muitos escravos pediram liberdade aos senhores para ajudar na obra, e encontraram na imagem um sinal de amor e redenção. Daí nasceu o grande santuário que hoje acolhe milhões de peregrinos."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Rainha do coração brasileiro",
+      "paragraphs": [
+        "Em 1888, a Princesa Isabel ofereceu coroa e manto à imagem, reconhecendo-a como Rainha. Em 1904, o Papa São Pio X mandou coroar a imagem; em 1911, o Papa Pio XI declarou Nossa Senhora Aparecida padroeira oficial do Brasil.",
+        "Em 31 de outubro de 1931, o Cardeal Leme, com o episcopado, levou a imagem ao Rio de Janeiro e consagrou o Brasil com as palavras: \"Nossa Senhora Aparecida, o Brasil é vosso. Cuidai do Brasil.\"",
+        "Por mais que a nação seja uma república, no coração do povo brasileiro permanece uma rainha: Nossa Senhora da Conceição Aparecida."
+      ],
+      "quote": "Fé, esperança e proteção: eis o legado de Nossa Senhora Aparecida para o Brasil."
+    }
+  ]
+}

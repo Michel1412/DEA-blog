@@ -92,6 +92,11 @@ export const nossaSenhoraMedjugorjeContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
+export const nossaSenhoraAparecidaContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-aparecida'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
 export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
   slug: z.literal('titulos-nossa-senhora-template'),
 })
@@ -231,6 +236,9 @@ export type NossaSenhoraAuxiliadoraContent = z.infer<
 export type NossaSenhoraMedjugorjeContent = z.infer<
   typeof nossaSenhoraMedjugorjeContentSchema
 >
+export type NossaSenhoraAparecidaContent = z.infer<
+  typeof nossaSenhoraAparecidaContentSchema
+>
 export type TitulosNossaSenhoraTemplateContent = z.infer<
   typeof titulosNossaSenhoraTemplateContentSchema
 >
@@ -244,6 +252,7 @@ export type ContentSlug =
   | 'titulos-nossa-senhora'
   | 'nossa-senhora-auxiliadora'
   | 'nossa-senhora-medjugorje'
+  | 'nossa-senhora-aparecida'
   | 'titulos-nossa-senhora-template'
   | 'ministerios'
   | 'ministerios-template'
@@ -254,6 +263,7 @@ const contentSchemas = {
   'titulos-nossa-senhora': titulosNossaSenhoraContentSchema,
   'nossa-senhora-auxiliadora': nossaSenhoraAuxiliadoraContentSchema,
   'nossa-senhora-medjugorje': nossaSenhoraMedjugorjeContentSchema,
+  'nossa-senhora-aparecida': nossaSenhoraAparecidaContentSchema,
   'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
   'ministerios-template': ministeriosTemplateContentSchema,

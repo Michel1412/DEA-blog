@@ -10,6 +10,7 @@ Site institucional do Grupo Deus É Amor, construído com **Next.js 16**, **Reac
 | `/titulos-nossa-senhora` | Títulos de Nossa Senhora — devoções marianas |
 | `/titulos-nossa-senhora/nossa-senhora-auxiliadora` | Nossa Senhora Auxiliadora |
 | `/titulos-nossa-senhora/nossa-senhora-medjugorje` | Nossa Senhora em Medjugorje |
+| `/titulos-nossa-senhora/nossa-senhora-aparecida` | Nossa Senhora Aparecida |
 | `/titulos-nossa-senhora/template` | **Modelo aprovado** para novas páginas de títulos marianos |
 | `/ministerios` | Lista de ministérios |
 | `/ministerios/dea-ajuda` | Ministério DEA Ajuda |
@@ -27,7 +28,7 @@ Novas páginas devem copiar:
 - Page: `app/titulos-nossa-senhora/template/page.tsx` ou `app/ministerios/template/page.tsx`
 - Componentes: `ContentPageTemplate`, `ListingPageTemplate`, `PageShell`
 
-Consulte `specs/spec-0.0.1.md` (versão atual) e `specs/spec-0.0.0.md` (baseline).
+Consulte `specs/spec-0.0.2.md` (versão atual), `specs/spec-0.0.1.md` e `specs/spec-0.0.0.md` (baseline).
 
 ## Versionamento
 
@@ -37,6 +38,7 @@ Cada versão `0.0.x` adiciona **uma nova página** de conteúdo. Política compl
 |--------|---------|
 | 0.0.0 | Templates, navbar horizontal, páginas-modelo |
 | 0.0.1 | Nossa Senhora em Medjugorje |
+| 0.0.2 | Nossa Senhora Aparecida |
 
 ## Estrutura de specs
 
@@ -44,7 +46,8 @@ Cada versão `0.0.x` adiciona **uma nova página** de conteúdo. Política compl
 specs/
 ├── version.json          # versão semver do conteúdo + specFile
 ├── spec-0.0.0.md         # release notes v0.0.0 (baseline)
-├── spec-0.0.1.md         # release notes da versão atual
+├── spec-0.0.1.md         # release notes v0.0.1
+├── spec-0.0.2.md         # release notes da versão atual
 ├── routes.json           # rotas da navbar (parent = dropdown)
 ├── content/              # textos e dados das páginas
 └── tests/

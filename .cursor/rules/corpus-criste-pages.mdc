@@ -14,6 +14,7 @@ alwaysApply: false
 | Títulos de Nossa Senhora (index) | ListingPageTemplate | titulos-nossa-senhora.json |
 | Nossa Senhora Auxiliadora | ContentPageTemplate compact | nossa-senhora-auxiliadora.json |
 | Nossa Senhora em Medjugorje | ContentPageTemplate compact | nossa-senhora-medjugorje.json |
+| Nossa Senhora Aparecida | ContentPageTemplate compact | nossa-senhora-aparecida.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | DEA Ajuda | Custom (do not copy) | dea-ajuda.json |
