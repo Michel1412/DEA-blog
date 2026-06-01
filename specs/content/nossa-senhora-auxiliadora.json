@@ -1,0 +1,49 @@
+{
+  "slug": "nossa-senhora-auxiliadora",
+  "meta": {
+    "title": "Nossa Senhora Auxiliadora | Grupo Deus É Amor",
+    "description": "Conheça a devoção a Nossa Senhora Auxiliadora, Auxiliadora dos Cristãos."
+  },
+  "hero": {
+    "title": "Nossa Senhora Auxiliadora",
+    "subtitle": "Auxiliadora dos Cristãos",
+    "quote": "Maria, Auxiliadora dos Cristãos, rogai por nós.",
+    "backgroundImage": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1600&q=80",
+    "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Quem é Nossa Senhora Auxiliadora?",
+      "paragraphs": [
+        "Nossa Senhora Auxiliadora é um dos títulos mais conhecidos e amados da Virgem Maria na Igreja Católica.",
+        "A palavra \"Auxiliadora\" representa aquela que socorre, protege e acompanha os cristãos em suas necessidades espirituais e materiais."
+      ],
+      "quote": "Maria é reconhecida como Mãe que auxilia seus filhos e os conduz para mais perto de Jesus Cristo."
+    },
+    {
+      "type": "card",
+      "title": "Origem da Devoção",
+      "paragraphs": [
+        "A devoção ganhou força principalmente através de São João Bosco, fundador da Família Salesiana.",
+        "Dom Bosco confiava profundamente na proteção de Nossa Senhora Auxiliadora e difundiu essa espiritualidade entre jovens, famílias e comunidades cristãs.",
+        "Em 1868 foi inaugurada a Basílica de Maria Auxiliadora em Turim, na Itália, tornando-se referência mundial para os devotos."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Uma Presença de Esperança",
+      "paragraphs": [
+        "Ao longo dos séculos, milhares de testemunhos relataram graças alcançadas por meio da intercessão de Nossa Senhora Auxiliadora.",
+        "Sua figura inspira confiança, perseverança, acolhimento e amor ao próximo.",
+        "Ela continua sendo exemplo de serviço, humildade e entrega total à vontade de Deus."
+      ]
+    }
+  ]
+}

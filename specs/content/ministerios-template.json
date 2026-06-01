@@ -1,0 +1,49 @@
+{
+  "slug": "ministerios-template",
+  "meta": {
+    "title": "Modelo (Ministérios) | Grupo Deus É Amor",
+    "description": "Página-modelo aprovada para novos ministérios do Grupo Deus É Amor."
+  },
+  "hero": {
+    "title": "Modelo — Página de Ministério",
+    "subtitle": "Use este modelo como ponto de partida para novos ministérios",
+    "quote": "Copie este JSON e o page.tsx mínimo para criar novas páginas.",
+    "backgroundImage": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1600&q=80",
+    "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Modelo aprovado",
+      "variant": "highlight",
+      "paragraphs": [
+        "Esta é a página de referência para novos ministérios no site CorpusCriste.",
+        "Para criar uma nova página, copie este arquivo JSON, o page.tsx de /ministerios/template e registre o slug em lib/specs/types.ts e loader.ts.",
+        "Ministérios com layout especial (como DEA Ajuda) são exceção — use layout custom apenas quando aprovado."
+      ],
+      "quote": "Editar conteúdo = editar JSON + npm run test:specs"
+    },
+    {
+      "type": "card",
+      "title": "Campos editáveis",
+      "paragraphs": [
+        "meta.title e meta.description — SEO e título da aba do navegador.",
+        "hero.title, hero.subtitle, hero.quote — textos do hero com foto de fundo.",
+        "hero.backgroundImage — URL da imagem de fundo do hero.",
+        "hero.overlay — gradiente sobre a foto (opcional).",
+        "hero.logo — logo opcional no hero (src, alt, width, height).",
+        "sections[] — seções do tipo card, paragraphs ou quote."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Sempre copie deste modelo antes de criar uma nova página de ministério."
+    }
+  ]
+}

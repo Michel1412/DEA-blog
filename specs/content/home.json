@@ -1,0 +1,50 @@
+{
+  "slug": "home",
+  "meta": {
+    "title": "Grupo Deus É Amor | Nossa Senhora Auxiliadora",
+    "description": "Evangelizando jovens desde o ano 2000. Grupo Deus É Amor — oração, fraternidade e formação cristã."
+  },
+  "hero": {
+    "title": "Nossa Senhora Auxiliadora",
+    "subtitle": "Celebrada em 24 de Maio • Auxiliadora dos Cristãos",
+    "quote": "Maria, Auxiliadora dos Cristãos, rogai por nós.",
+    "backgroundImage": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1600&q=80",
+    "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 180,
+      "height": 180
+    }
+  },
+  "sections": [
+    {
+      "type": "paragraphs",
+      "title": "Grupo Deus É Amor",
+      "variant": "highlight",
+      "paragraphs": [
+        "Evangelizando jovens desde o ano 2000, o Grupo Deus É Amor nasceu com a missão de aproximar corações de Cristo através da oração, da fraternidade, da adoração e do encontro pessoal com Deus.",
+        "Todas as quintas-feiras às 19h15, jovens e famílias se reúnem para viver momentos de espiritualidade, pregação, louvor e formação cristã.",
+        "Inspirados pelo amor de Deus e pela intercessão da Virgem Maria, buscamos construir uma juventude firme na fé e comprometida com o Evangelho."
+      ]
+    },
+    {
+      "type": "paragraphs",
+      "title": "DEA Ajuda — Evangelizar através da Caridade",
+      "variant": "highlight",
+      "paragraphs": [
+        "Inspirado pelos valores cristãos vividos pelo Grupo Deus É Amor e pela devoção a Nossa Senhora Auxiliadora, o Ministério DEA Ajuda busca transformar fé em ação.",
+        "O ministério atua por meio de ações sociais, campanhas solidárias, arrecadações e projetos voltados para comunidades e casas de acolhida.",
+        "Nossa missão é levar ajuda de forma concreta aos que mais precisam, oferecendo apoio material, acolhimento humano e a presença amorosa do Evangelho.",
+        "Acreditamos que servir também é evangelizar.",
+        "Por isso buscamos ajudar com amor, alegria e generosidade, tornando Cristo presente através da caridade, do cuidado e da fraternidade."
+      ],
+      "quote": "Amar, acolher e servir: eis o caminho do Evangelho.",
+      "cta": {
+        "label": "Acompanhe o Grupo Deus É Amor",
+        "href": "https://www.instagram.com/grupodeuseamor/",
+        "style": "instagram"
+      }
+    }
+  ]
+}

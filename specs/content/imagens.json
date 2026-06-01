@@ -1,0 +1,29 @@
+{
+  "slug": "imagens",
+  "meta": {
+    "title": "Imagens | Grupo Deus É Amor",
+    "description": "Galeria de imagens, devoções e momentos especiais do Grupo Deus É Amor."
+  },
+  "hero": {
+    "title": "Imagens",
+    "subtitle": "Explore nossas devoções e reflexões em imagens que inspiram a fé e a caminhada cristã."
+  },
+  "galleries": [
+    {
+      "slug": "nossa-senhora-auxiliadora",
+      "title": "Nossa Senhora Auxiliadora",
+      "description": "Conheça a devoção a Nossa Senhora Auxiliadora, Auxiliadora dos Cristãos.",
+      "path": "/imagens/nossa-senhora-auxiliadora",
+      "emoji": "🌹",
+      "available": true
+    },
+    {
+      "slug": "template",
+      "title": "Modelo (Imagens)",
+      "description": "Página de referência aprovada para novas devoções e galerias.",
+      "path": "/imagens/template",
+      "emoji": "📋",
+      "available": true
+    }
+  ]
+}

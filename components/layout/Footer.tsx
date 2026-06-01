@@ -1,0 +1,33 @@
+import Image from 'next/image'
+import { Cross } from 'lucide-react'
+
+export function Footer() {
+  return (
+    <footer
+      className="bg-black py-10 px-5 text-center border-t border-[rgba(212,175,55,0.15)]"
+      data-testid="site-footer"
+    >
+      <div className="text-3xl text-[#d4af37] mb-3" aria-hidden="true">
+        ✝
+      </div>
+      <Image
+        src="/logo-deus-e-amor.png"
+        alt="Grupo Deus É Amor"
+        width={90}
+        height={90}
+        className="mx-auto mb-4 rounded-full"
+      />
+      <div className="flex items-center justify-center gap-2 mb-2">
+        <Cross className="w-5 h-5 text-[#d4af37] hidden sm:block" aria-hidden="true" />
+        <p className="text-lg font-semibold">Grupo Deus É Amor</p>
+      </div>
+      <p className="text-base mb-2 text-foreground/90">Ministério DEA Ajuda</p>
+      <p className="leading-relaxed text-foreground/80">
+        Evangelização • Ações Sociais • Casas de Acolhida • Caridade
+      </p>
+      <p className="opacity-80 text-sm mt-4" data-testid="footer-copyright">
+        © 2026 Ministério DEA Ajuda. Todos os direitos reservados.
+      </p>
+    </footer>
+  )
+}

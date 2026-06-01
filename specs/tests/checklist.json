@@ -1,0 +1,80 @@
+{
+  "version": "0.0.0",
+  "items": [
+    {
+      "id": "nav-horizontal-links",
+      "description": "Navbar exibe links horizontais Home, Imagens e Ministérios",
+      "category": "navigation"
+    },
+    {
+      "id": "nav-dropdown-children",
+      "description": "Dropdowns de Imagens e Ministérios listam páginas filhas incluindo modelos",
+      "category": "navigation"
+    },
+    {
+      "id": "nav-redirect",
+      "description": "Ao clicar em um link da navbar, a página redireciona corretamente",
+      "category": "navigation"
+    },
+    {
+      "id": "nav-mobile-menu",
+      "description": "Menu mobile expansível permite navegar para todas as rotas",
+      "category": "navigation"
+    },
+    {
+      "id": "template-pages",
+      "description": "Páginas-modelo /imagens/template e /ministerios/template usam ContentPageTemplate",
+      "category": "content"
+    },
+    {
+      "id": "approved-model",
+      "description": "Novas páginas devem copiar JSON e page.tsx dos modelos aprovados",
+      "category": "content"
+    },
+    {
+      "id": "dark-background",
+      "description": "Fundo escuro consistente em todas as rotas",
+      "category": "visual"
+    },
+    {
+      "id": "hero-overlay",
+      "description": "Hero com overlay escuro e texto legível",
+      "category": "visual"
+    },
+    {
+      "id": "rounded-cards",
+      "description": "Cards com cantos arredondados (rounded-2xl)",
+      "category": "visual"
+    },
+    {
+      "id": "gold-accent",
+      "description": "Destaques em dourado (#D4AF37) nos títulos e elementos principais",
+      "category": "visual"
+    },
+    {
+      "id": "footer-logo",
+      "description": "Rodapé exibe logo do Grupo Deus É Amor",
+      "category": "footer"
+    },
+    {
+      "id": "footer-cross",
+      "description": "Rodapé exibe símbolo da cruz",
+      "category": "footer"
+    },
+    {
+      "id": "footer-copyright",
+      "description": "Rodapé exibe copyright 2026",
+      "category": "footer"
+    },
+    {
+      "id": "home-content",
+      "description": "Home apresenta hero, Grupo DEA e trecho DEA Ajuda com botão Instagram",
+      "category": "content"
+    },
+    {
+      "id": "dea-ajuda-content",
+      "description": "Página DEA Ajuda contém projetos, valores e citação aprovados",
+      "category": "content"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+---
+description: Vercel deploy, routes, and redirects for CorpusCriste
+globs: vercel.json, specs/routes.json
+alwaysApply: false
+---
+
+# CorpusCriste — Deploy
+
+## Routes
+
+1. Next.js App Router routes = folder structure under `app/`
+2. Navbar options = `specs/routes.json` (use `parent` for dropdown children)
+3. **Never** configure Vercel-only routes without matching `app/` and `specs/routes.json`
+
+## New nested route
+
+Create `app/{section}/{slug}/page.tsx` and register in specs.
+
+## Legacy redirects (vercel.json)
+
+```json
+{
+  "redirects": [
+    { "source": "/slug-antigo", "destination": "/secao/novo-slug", "permanent": true }
+  ]
+}
+```
+
+When renaming public URLs, add a permanent redirect.
+
+## Deploy flow
+
+Push to GitHub → Vercel detects Next.js → `npm run build`
+
+Static asset cache is configured in `vercel.json`.

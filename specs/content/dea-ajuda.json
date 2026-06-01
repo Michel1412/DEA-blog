@@ -1,0 +1,98 @@
+{
+  "slug": "dea-ajuda",
+  "meta": {
+    "title": "DEA Ajuda | Transformando Fé em Caridade",
+    "description": "O coração solidário do Grupo Deus É Amor. Ministério social dedicado a levar esperança, acolhimento e dignidade."
+  },
+  "hero": {
+    "title": "Ajuda",
+    "highlight": "DEA",
+    "subtitle": "Transformando Fé em Caridade",
+    "tagline": "O coração solidário do Grupo Deus É Amor.",
+    "backgroundImage": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gDu1drW8E0523EXqdmJIaahvjltxAd.png",
+    "ctaLabel": "Assistir nossa história",
+    "ctaHref": "#video"
+  },
+  "about": {
+    "title": "DEA Ajuda",
+    "paragraphs": [
+      "O DEA Ajuda é o ministério social do Grupo Deus É Amor.",
+      "Nascemos da certeza de que a fé não pode permanecer apenas nas palavras. Somos chamados a viver o Evangelho através de ações concretas que levam esperança, acolhimento e dignidade aos que mais precisam.",
+      "Cada campanha, arrecadação, visita ou projeto realizado representa uma oportunidade de colocar em prática o amor ensinado por Cristo."
+    ],
+    "highlight": "Inspirados por Nossa Senhora Auxiliadora, buscamos ser presença de cuidado, serviço e solidariedade na comunidade."
+  },
+  "video": {
+    "title": "Conheça nossa",
+    "titleHighlight": "missão",
+    "description": "Assista ao vídeo e veja algumas das ações que marcaram nossa caminhada.",
+    "placeholder": "Vídeo em breve"
+  },
+  "projects": {
+    "title": "Projetos",
+    "titleHighlight": "Realizados",
+    "description": "Conheça algumas das ações que já desenvolvemos",
+    "items": [
+      {
+        "emoji": "🏃",
+        "title": "Prova Rústica Tiradentes",
+        "description": "Distribuímos água, apoio e incentivo aos atletas durante o evento, promovendo acolhimento e cuidado com todos os participantes."
+      },
+      {
+        "emoji": "🍲",
+        "title": "Sopão Solidário",
+        "description": "Participamos do preparo e da distribuição de refeições para pessoas em situação de vulnerabilidade."
+      },
+      {
+        "emoji": "🧥",
+        "title": "Campanha do Agasalho",
+        "description": "Mobilizamos jovens e famílias para arrecadar roupas e cobertores destinados a quem enfrenta o inverno com dificuldades."
+      },
+      {
+        "emoji": "⚽",
+        "title": "Figurinhas da Copa",
+        "description": "Arrecadamos álbuns e figurinhas para proporcionar momentos de alegria a crianças que não tinham acesso ao material."
+      }
+    ]
+  },
+  "inspiration": {
+    "title": "Nossa",
+    "titleHighlight": "Inspiração",
+    "backgroundImage": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-4FoazRGOAGI7pMspjDhFGgdFaAcjY2.png",
+    "paragraphs": [
+      "Nossa Senhora Auxiliadora nos recorda que servir é uma forma de amar.",
+      "Seu exemplo de entrega, humildade e disponibilidade inspira cada ação desenvolvida pelo ministério.",
+      "Buscamos viver sua espiritualidade através da caridade, do acolhimento e do compromisso com aqueles que mais necessitam."
+    ]
+  },
+  "values": {
+    "title": "Nossos",
+    "titleHighlight": "Valores",
+    "items": [
+      {
+        "icon": "heart",
+        "title": "Amor",
+        "description": "Servir cada pessoa com dignidade."
+      },
+      {
+        "icon": "users",
+        "title": "Solidariedade",
+        "description": "Compartilhar aquilo que recebemos."
+      },
+      {
+        "icon": "smile",
+        "title": "Alegria",
+        "description": "Levar esperança através do sorriso."
+      },
+      {
+        "icon": "cross",
+        "title": "Evangelho",
+        "description": "Anunciar Cristo através das ações."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Não podemos todos fazer grandes coisas, mas podemos fazer pequenas coisas com muito amor.",
+    "author": "Santa Teresa de Calcutá"
+  }
+}

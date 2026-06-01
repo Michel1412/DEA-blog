@@ -1,0 +1,29 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# next.js
+.next/
+out/
+
+# env
+.env*.local
+
+# debug
+npm-debug.log*
+
+# vercel
+.vercel
+
+# playwright
+test-results/
+playwright-report/
+blob-report/
+
+# reference extracts
+_ref-deploy/
+_ref-landing/
+
+# os
+.DS_Store
+Thumbs.db

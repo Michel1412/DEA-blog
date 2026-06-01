@@ -1,0 +1,25 @@
+{
+  "redirects": [
+    {
+      "source": "/dea-ajuda",
+      "destination": "/ministerios/dea-ajuda",
+      "permanent": true
+    },
+    {
+      "source": "/nossa-senhora-auxiliadora",
+      "destination": "/imagens/nossa-senhora-auxiliadora",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*\\.(png|jpg|jpeg|svg|ico|webp))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

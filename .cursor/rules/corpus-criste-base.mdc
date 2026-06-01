@@ -1,0 +1,37 @@
+---
+description: Core standards for CorpusCriste — content-first, approved templates, visual identity
+alwaysApply: true
+---
+
+# CorpusCriste — Base
+
+## Content-first
+
+- Edit `specs/content/*.json` for page content
+- Validate with `npm run test:specs` before finishing
+- Register new slugs in `lib/specs/types.ts` and `lib/specs/loader.ts`
+
+## Approved page model (mandatory)
+
+- Copy from `/imagens/template` or `/ministerios/template` for new pages
+- Use `ContentPageTemplate` for hero + sections pages
+- Use `ListingPageTemplate` for index/listing pages
+- Use `PageShell` as the outer wrapper (via templates)
+- **Never** duplicate hero/card JSX in `page.tsx` files
+- **Never** invent new visual patterns without approval
+
+## Exceptions
+
+- DEA Ajuda (`/ministerios/dea-ajuda`) uses custom layout — do not refactor to generic template
+
+## Visual identity
+
+- Background: `#0f0f12`
+- Gold accent: `#d4af37`
+- Wine secondary: `#8B2332`
+- Serif titles: Cormorant Garamond
+- Rounded cards: `rounded-2xl`
+
+## Version reference
+
+- Read `specs/spec-0.0.0.md` and `specs/version.json` for current baseline

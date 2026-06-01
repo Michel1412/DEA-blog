@@ -1,0 +1,45 @@
+{
+  "slug": "ministerios",
+  "meta": {
+    "title": "Ministérios | Grupo Deus É Amor",
+    "description": "Conheça os ministérios do Grupo Deus É Amor e participe da missão evangelizadora."
+  },
+  "hero": {
+    "title": "Ministérios",
+    "subtitle": "Cada ministério é um caminho de serviço e evangelização no Grupo Deus É Amor."
+  },
+  "ministries": [
+    {
+      "slug": "dea-ajuda",
+      "title": "DEA Ajuda",
+      "description": "Evangelizar através da caridade — ações sociais, campanhas solidárias e acolhimento às comunidades.",
+      "path": "/ministerios/dea-ajuda",
+      "emoji": "🤝",
+      "available": true
+    },
+    {
+      "slug": "template",
+      "title": "Modelo (Ministérios)",
+      "description": "Página de referência aprovada para novos ministérios.",
+      "path": "/ministerios/template",
+      "emoji": "📋",
+      "available": true
+    },
+    {
+      "slug": "louvor",
+      "title": "Louvor",
+      "description": "Ministério de música e adoração — em breve mais informações.",
+      "path": "/ministerios",
+      "emoji": "🎵",
+      "available": false
+    },
+    {
+      "slug": "intercessao",
+      "title": "Intercessão",
+      "description": "Grupo de oração e intercessão — em breve mais informações.",
+      "path": "/ministerios",
+      "emoji": "🙏",
+      "available": false
+    }
+  ]
+}

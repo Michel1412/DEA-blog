@@ -1,0 +1,27 @@
+{
+  "items": [
+    { "label": "Home", "path": "/" },
+    { "label": "Imagens", "path": "/imagens" },
+    {
+      "label": "Nossa Senhora Auxiliadora",
+      "path": "/imagens/nossa-senhora-auxiliadora",
+      "parent": "/imagens"
+    },
+    {
+      "label": "Modelo (Imagens)",
+      "path": "/imagens/template",
+      "parent": "/imagens"
+    },
+    { "label": "Ministérios", "path": "/ministerios" },
+    {
+      "label": "DEA Ajuda",
+      "path": "/ministerios/dea-ajuda",
+      "parent": "/ministerios"
+    },
+    {
+      "label": "Modelo (Ministérios)",
+      "path": "/ministerios/template",
+      "parent": "/ministerios"
+    }
+  ]
+}
