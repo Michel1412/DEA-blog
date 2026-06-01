@@ -32,4 +32,4 @@ When renaming public URLs, add a permanent redirect.
 
 Push to GitHub → Vercel detects Next.js → `npm run build`
 
-Static asset cache is configured in `vercel.json`.
+Static assets (`public/`, `_next/static/`) are cached automatically by Vercel/Next.js. Do not add custom `headers` regex patterns in `vercel.json` — path-to-regexp rejects patterns like `/(.*\\.(png|jpg))`.

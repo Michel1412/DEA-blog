@@ -10,16 +10,5 @@
       "destination": "/imagens/nossa-senhora-auxiliadora",
       "permanent": true
     }
-  ],
-  "headers": [
-    {
-      "source": "/(.*\\.(png|jpg|jpeg|svg|ico|webp))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
   ]
 }
