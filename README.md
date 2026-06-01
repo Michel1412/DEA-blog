@@ -7,31 +7,44 @@ Site institucional do Grupo Deus É Amor, construído com **Next.js 16**, **Reac
 | Rota | Descrição |
 |------|-----------|
 | `/` | Home — Grupo Deus É Amor |
-| `/imagens` | Galeria de imagens e devoções |
-| `/imagens/nossa-senhora-auxiliadora` | Nossa Senhora Auxiliadora |
-| `/imagens/template` | **Modelo aprovado** para novas páginas de imagens |
+| `/titulos-nossa-senhora` | Títulos de Nossa Senhora — devoções marianas |
+| `/titulos-nossa-senhora/nossa-senhora-auxiliadora` | Nossa Senhora Auxiliadora |
+| `/titulos-nossa-senhora/nossa-senhora-medjugorje` | Nossa Senhora em Medjugorje |
+| `/titulos-nossa-senhora/template` | **Modelo aprovado** para novas páginas de títulos marianos |
 | `/ministerios` | Lista de ministérios |
 | `/ministerios/dea-ajuda` | Ministério DEA Ajuda |
 | `/ministerios/template` | **Modelo aprovado** para novos ministérios |
 
-A navegação é feita pela **navbar horizontal** com dropdowns em Imagens e Ministérios (menu expansível no mobile).
+A navegação é feita pela **navbar horizontal** com dropdowns em Títulos de Nossa Senhora e Ministérios (menu expansível no mobile).
+
+**Redirects legados:** `/imagens` e `/imagens/*` redirecionam para `/titulos-nossa-senhora` (ver `vercel.json`).
 
 ## Modelo aprovado
 
 Novas páginas devem copiar:
 
-- JSON: `specs/content/imagens-template.json` ou `ministerios-template.json`
-- Page: `app/imagens/template/page.tsx` ou `app/ministerios/template/page.tsx`
+- JSON: `specs/content/titulos-nossa-senhora-template.json` ou `ministerios-template.json`
+- Page: `app/titulos-nossa-senhora/template/page.tsx` ou `app/ministerios/template/page.tsx`
 - Componentes: `ContentPageTemplate`, `ListingPageTemplate`, `PageShell`
 
-Consulte `specs/spec-0.0.0.md` para o resumo completo da versão baseline.
+Consulte `specs/spec-0.0.1.md` (versão atual) e `specs/spec-0.0.0.md` (baseline).
+
+## Versionamento
+
+Cada versão `0.0.x` adiciona **uma nova página** de conteúdo. Política completa em `.cursor/rules/corpus-criste-versions.mdc`.
+
+| Versão | Entrega |
+|--------|---------|
+| 0.0.0 | Templates, navbar horizontal, páginas-modelo |
+| 0.0.1 | Nossa Senhora em Medjugorje |
 
 ## Estrutura de specs
 
 ```
 specs/
 ├── version.json          # versão semver do conteúdo + specFile
-├── spec-0.0.0.md         # release notes da versão atual
+├── spec-0.0.0.md         # release notes v0.0.0 (baseline)
+├── spec-0.0.1.md         # release notes da versão atual
 ├── routes.json           # rotas da navbar (parent = dropdown)
 ├── content/              # textos e dados das páginas
 └── tests/
@@ -46,6 +59,7 @@ Agentes devem seguir `.cursor/rules/`:
 - `corpus-criste-base.mdc` — padrões gerais (always apply)
 - `corpus-criste-pages.mdc` — criação de páginas e templates
 - `corpus-criste-deploy.mdc` — rotas e deploy Vercel
+- `corpus-criste-versions.mdc` — política de versionamento (cada 0.0.x = uma página)
 
 ## Desenvolvimento
 
@@ -74,7 +88,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 5. Output Directory: `.next` (padrão)
 6. Clique em **Deploy**.
 
-O arquivo [`vercel.json`](vercel.json) inclui redirects de `/dea-ajuda` e `/nossa-senhora-auxiliadora` para as novas rotas, além de cache para assets estáticos.
+O arquivo [`vercel.json`](vercel.json) inclui redirects de URLs legadas (`/imagens`, `/dea-ajuda`, `/nossa-senhora-auxiliadora`) para as rotas atuais.
 
 ## Identidade visual
 

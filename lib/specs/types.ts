@@ -87,8 +87,13 @@ export const nossaSenhoraAuxiliadoraContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
-export const imagensTemplateContentSchema = contentPageSchema.extend({
-  slug: z.literal('imagens-template'),
+export const nossaSenhoraMedjugorjeContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-medjugorje'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
+export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
+  slug: z.literal('titulos-nossa-senhora-template'),
 })
 
 export const ministeriosTemplateContentSchema = contentPageSchema.extend({
@@ -104,8 +109,8 @@ export const galleryItemSchema = z.object({
   available: z.boolean().default(true),
 })
 
-export const imagensContentSchema = z.object({
-  slug: z.literal('imagens'),
+export const titulosNossaSenhoraContentSchema = z.object({
+  slug: z.literal('titulos-nossa-senhora'),
   meta: z.object({
     title: z.string(),
     description: z.string(),
@@ -219,11 +224,16 @@ export type QuoteBlock = z.infer<typeof quoteBlockSchema>
 export type ContentSection = z.infer<typeof contentSectionSchema>
 export type ContentPage = z.infer<typeof contentPageSchema>
 export type HomeContent = z.infer<typeof homeContentSchema>
-export type ImagensContent = z.infer<typeof imagensContentSchema>
+export type TitulosNossaSenhoraContent = z.infer<typeof titulosNossaSenhoraContentSchema>
 export type NossaSenhoraAuxiliadoraContent = z.infer<
   typeof nossaSenhoraAuxiliadoraContentSchema
 >
-export type ImagensTemplateContent = z.infer<typeof imagensTemplateContentSchema>
+export type NossaSenhoraMedjugorjeContent = z.infer<
+  typeof nossaSenhoraMedjugorjeContentSchema
+>
+export type TitulosNossaSenhoraTemplateContent = z.infer<
+  typeof titulosNossaSenhoraTemplateContentSchema
+>
 export type MinisteriosTemplateContent = z.infer<typeof ministeriosTemplateContentSchema>
 export type MinisteriosContent = z.infer<typeof ministeriosContentSchema>
 export type DeaAjudaContent = z.infer<typeof deaAjudaContentSchema>
@@ -231,18 +241,20 @@ export type ChecklistSpec = z.infer<typeof checklistSchema>
 
 export type ContentSlug =
   | 'home'
-  | 'imagens'
+  | 'titulos-nossa-senhora'
   | 'nossa-senhora-auxiliadora'
-  | 'imagens-template'
+  | 'nossa-senhora-medjugorje'
+  | 'titulos-nossa-senhora-template'
   | 'ministerios'
   | 'ministerios-template'
   | 'dea-ajuda'
 
 const contentSchemas = {
   home: homeContentSchema,
-  imagens: imagensContentSchema,
+  'titulos-nossa-senhora': titulosNossaSenhoraContentSchema,
   'nossa-senhora-auxiliadora': nossaSenhoraAuxiliadoraContentSchema,
-  'imagens-template': imagensTemplateContentSchema,
+  'nossa-senhora-medjugorje': nossaSenhoraMedjugorjeContentSchema,
+  'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
   'ministerios-template': ministeriosTemplateContentSchema,
   'dea-ajuda': deaAjudaContentSchema,

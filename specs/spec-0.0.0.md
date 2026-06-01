@@ -13,8 +13,8 @@ documentação para agentes Cursor.
 
 1. Componentes de template (PageShell, ContentPageTemplate, SectionRenderer, ListingPageTemplate)
 2. Refatoração das páginas existentes para usar templates
-3. Navbar horizontal: Home, Imagens (dropdown), Ministérios (dropdown)
-4. Páginas-modelo: /imagens/template, /ministerios/template
+3. Navbar horizontal: Home, Títulos de Nossa Senhora (dropdown), Ministérios (dropdown)
+4. Páginas-modelo: /titulos-nossa-senhora/template, /ministerios/template
 5. Regras Cursor em .cursor/rules/
 6. Testes e checklist atualizados
 
@@ -23,16 +23,16 @@ documentação para agentes Cursor.
 - Páginas de conteúdo: ContentPageTemplate + JSON em specs/content/
 - Páginas de listagem: ListingPageTemplate + JSON
 - Exceção: DEA Ajuda (layout custom, não usar template genérico)
-- Sempre copiar de imagens-template ou ministerios-template
+- Sempre copiar de titulos-nossa-senhora-template ou ministerios-template
 
 ## Rotas desta versão
 
 | Rota | Tipo |
 |------|------|
 | / | ContentPageTemplate |
-| /imagens | ListingPageTemplate |
-| /imagens/nossa-senhora-auxiliadora | ContentPageTemplate |
-| /imagens/template | ContentPageTemplate (MODELO) |
+| /titulos-nossa-senhora | ListingPageTemplate |
+| /titulos-nossa-senhora/nossa-senhora-auxiliadora | ContentPageTemplate |
+| /titulos-nossa-senhora/template | ContentPageTemplate (MODELO) |
 | /ministerios | ListingPageTemplate |
 | /ministerios/dea-ajuda | Custom |
 | /ministerios/template | ContentPageTemplate (MODELO) |
@@ -40,7 +40,8 @@ documentação para agentes Cursor.
 ## Redirects Vercel (vercel.json)
 
 - /dea-ajuda → /ministerios/dea-ajuda
-- /nossa-senhora-auxiliadora → /imagens/nossa-senhora-auxiliadora
+- /nossa-senhora-auxiliadora → /titulos-nossa-senhora/nossa-senhora-auxiliadora
+- /imagens e /imagens/* → /titulos-nossa-senhora (redirects legados)
 
 ## Checklist de aceite
 

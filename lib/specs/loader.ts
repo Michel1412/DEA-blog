@@ -5,23 +5,25 @@ import {
   checklistSchema,
   deaAjudaContentSchema,
   homeContentSchema,
-  imagensContentSchema,
-  imagensTemplateContentSchema,
   ministeriosContentSchema,
   ministeriosTemplateContentSchema,
   nossaSenhoraAuxiliadoraContentSchema,
+  nossaSenhoraMedjugorjeContentSchema,
   routesSchema,
+  titulosNossaSenhoraContentSchema,
+  titulosNossaSenhoraTemplateContentSchema,
   versionSchema,
   type ChecklistSpec,
   type ContentSlug,
   type DeaAjudaContent,
   type HomeContent,
-  type ImagensContent,
-  type ImagensTemplateContent,
   type MinisteriosContent,
   type MinisteriosTemplateContent,
   type NossaSenhoraAuxiliadoraContent,
+  type NossaSenhoraMedjugorjeContent,
   type RoutesSpec,
+  type TitulosNossaSenhoraContent,
+  type TitulosNossaSenhoraTemplateContent,
   type VersionSpec,
 } from './types'
 
@@ -47,9 +49,10 @@ export function loadChecklist(): ChecklistSpec {
 
 type ContentMap = {
   home: HomeContent
-  imagens: ImagensContent
+  'titulos-nossa-senhora': TitulosNossaSenhoraContent
   'nossa-senhora-auxiliadora': NossaSenhoraAuxiliadoraContent
-  'imagens-template': ImagensTemplateContent
+  'nossa-senhora-medjugorje': NossaSenhoraMedjugorjeContent
+  'titulos-nossa-senhora-template': TitulosNossaSenhoraTemplateContent
   ministerios: MinisteriosContent
   'ministerios-template': MinisteriosTemplateContent
   'dea-ajuda': DeaAjudaContent
@@ -59,17 +62,25 @@ export function loadContent<S extends ContentSlug>(slug: S): ContentMap[S] {
   switch (slug) {
     case 'home':
       return readJsonFile('content/home.json', homeContentSchema) as ContentMap[S]
-    case 'imagens':
-      return readJsonFile('content/imagens.json', imagensContentSchema) as ContentMap[S]
+    case 'titulos-nossa-senhora':
+      return readJsonFile(
+        'content/titulos-nossa-senhora.json',
+        titulosNossaSenhoraContentSchema,
+      ) as ContentMap[S]
     case 'nossa-senhora-auxiliadora':
       return readJsonFile(
         'content/nossa-senhora-auxiliadora.json',
         nossaSenhoraAuxiliadoraContentSchema,
       ) as ContentMap[S]
-    case 'imagens-template':
+    case 'nossa-senhora-medjugorje':
       return readJsonFile(
-        'content/imagens-template.json',
-        imagensTemplateContentSchema,
+        'content/nossa-senhora-medjugorje.json',
+        nossaSenhoraMedjugorjeContentSchema,
+      ) as ContentMap[S]
+    case 'titulos-nossa-senhora-template':
+      return readJsonFile(
+        'content/titulos-nossa-senhora-template.json',
+        titulosNossaSenhoraTemplateContentSchema,
       ) as ContentMap[S]
     case 'ministerios':
       return readJsonFile(
@@ -97,9 +108,10 @@ export function validateAllSpecs(): void {
   ;(
     [
       'home',
-      'imagens',
+      'titulos-nossa-senhora',
       'nossa-senhora-auxiliadora',
-      'imagens-template',
+      'nossa-senhora-medjugorje',
+      'titulos-nossa-senhora-template',
       'ministerios',
       'ministerios-template',
       'dea-ajuda',

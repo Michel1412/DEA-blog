@@ -1,0 +1,37 @@
+{
+  "slug": "titulos-nossa-senhora",
+  "meta": {
+    "title": "Títulos de Nossa Senhora | Grupo Deus É Amor",
+    "description": "Conheça os títulos e devoções a Nossa Senhora que inspiram a fé e a caminhada cristã."
+  },
+  "hero": {
+    "title": "Títulos de Nossa Senhora",
+    "subtitle": "Explore as devoções marianas que fortalecem a fé e a caminhada cristã."
+  },
+  "galleries": [
+    {
+      "slug": "nossa-senhora-auxiliadora",
+      "title": "Nossa Senhora Auxiliadora",
+      "description": "Conheça a devoção a Nossa Senhora Auxiliadora, Auxiliadora dos Cristãos.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-auxiliadora",
+      "emoji": "🌹",
+      "available": true
+    },
+    {
+      "slug": "nossa-senhora-medjugorje",
+      "title": "Nossa Senhora em Medjugorje",
+      "description": "As aparições de Nossa Senhora em Medjugorje desde 1981.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-medjugorje",
+      "emoji": "✨",
+      "available": true
+    },
+    {
+      "slug": "template",
+      "title": "Modelo (Títulos de Nossa Senhora)",
+      "description": "Página de referência aprovada para novas devoções marianas.",
+      "path": "/titulos-nossa-senhora/template",
+      "emoji": "📋",
+      "available": true
+    }
+  ]
+}

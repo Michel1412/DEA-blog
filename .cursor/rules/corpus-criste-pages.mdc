@@ -11,9 +11,10 @@ alwaysApply: false
 | Page | Template | JSON |
 |------|----------|------|
 | Home | ContentPageTemplate | home.json |
-| Imagens (index) | ListingPageTemplate | imagens.json |
+| Títulos de Nossa Senhora (index) | ListingPageTemplate | titulos-nossa-senhora.json |
 | Nossa Senhora Auxiliadora | ContentPageTemplate compact | nossa-senhora-auxiliadora.json |
-| **Imagens template** | ContentPageTemplate compact | imagens-template.json |
+| Nossa Senhora em Medjugorje | ContentPageTemplate compact | nossa-senhora-medjugorje.json |
+| **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | DEA Ajuda | Custom (do not copy) | dea-ajuda.json |
 | **Ministérios template** | ContentPageTemplate compact | ministerios-template.json |
@@ -39,10 +40,10 @@ export default function Page() {
 
 ## New page checklist
 
-1. Copy JSON from `imagens-template.json` or `ministerios-template.json`
-2. Copy `app/imagens/template/page.tsx` (or ministerios equivalent)
+1. Copy JSON from `titulos-nossa-senhora-template.json` or `ministerios-template.json`
+2. Copy `app/titulos-nossa-senhora/template/page.tsx` (or ministerios equivalent)
 3. Register slug in `lib/specs/types.ts` + `lib/specs/loader.ts`
 4. Add route in `specs/routes.json` with `parent`
-5. Add listing card in `imagens.json` or `ministerios.json`
+5. Add listing card in `titulos-nossa-senhora.json` or `ministerios.json`
 6. Add redirect in `vercel.json` if renaming legacy URLs
 7. Run `npm run test:specs` and `npm run test:e2e`

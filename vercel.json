@@ -7,7 +7,17 @@
     },
     {
       "source": "/nossa-senhora-auxiliadora",
-      "destination": "/imagens/nossa-senhora-auxiliadora",
+      "destination": "/titulos-nossa-senhora/nossa-senhora-auxiliadora",
+      "permanent": true
+    },
+    {
+      "source": "/imagens",
+      "destination": "/titulos-nossa-senhora",
+      "permanent": true
+    },
+    {
+      "source": "/imagens/:path*",
+      "destination": "/titulos-nossa-senhora/:path*",
       "permanent": true
     }
   ]

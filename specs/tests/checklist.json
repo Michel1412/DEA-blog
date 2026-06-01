@@ -1,14 +1,14 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "items": [
     {
       "id": "nav-horizontal-links",
-      "description": "Navbar exibe links horizontais Home, Imagens e Ministérios",
+      "description": "Navbar exibe links horizontais Home, Títulos de Nossa Senhora e Ministérios",
       "category": "navigation"
     },
     {
       "id": "nav-dropdown-children",
-      "description": "Dropdowns de Imagens e Ministérios listam páginas filhas incluindo modelos",
+      "description": "Dropdowns de Títulos de Nossa Senhora e Ministérios listam páginas filhas incluindo modelos",
       "category": "navigation"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "id": "template-pages",
-      "description": "Páginas-modelo /imagens/template e /ministerios/template usam ContentPageTemplate",
+      "description": "Páginas-modelo /titulos-nossa-senhora/template e /ministerios/template usam ContentPageTemplate",
       "category": "content"
     },
     {
@@ -74,6 +74,11 @@
     {
       "id": "dea-ajuda-content",
       "description": "Página DEA Ajuda contém projetos, valores e citação aprovados",
+      "category": "content"
+    },
+    {
+      "id": "medjugorje-content",
+      "description": "Página Medjugorje apresenta hero com foto local, cards e texto sobre as aparições",
       "category": "content"
     }
   ]

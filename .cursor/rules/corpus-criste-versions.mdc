@@ -1,0 +1,44 @@
+---
+description: CorpusCriste versioning policy — each 0.0.x release adds one new page
+globs: specs/version.json, specs/spec-*.md, specs/content/**
+alwaysApply: false
+---
+
+# CorpusCriste — Versionamento
+
+## Regra principal
+
+**Cada versão `0.0.x` adiciona exatamente uma nova página de conteúdo**, usando sempre o modelo aprovado:
+
+- Títulos de Nossa Senhora / devoções → `ContentPageTemplate` (copiar de `titulos-nossa-senhora-template`)
+- Ministérios → `ContentPageTemplate` ou `ListingPageTemplate` conforme o caso
+- Exceção: layouts custom só com aprovação explícita (ex.: DEA Ajuda)
+
+## Histórico
+
+| Versão | Página | Rota |
+|--------|--------|------|
+| 0.0.0 | Baseline (templates, navbar) | — |
+| 0.0.1 | Nossa Senhora em Medjugorje | `/titulos-nossa-senhora/nossa-senhora-medjugorje` |
+
+## Checklist obrigatório por versão
+
+1. Criar `specs/content/{slug}.json`
+2. Criar `app/.../page.tsx` mínimo (copiar de `app/titulos-nossa-senhora/template/page.tsx`)
+3. Registrar slug em `lib/specs/types.ts` + `lib/specs/loader.ts`
+4. Adicionar rota em `specs/routes.json` com `parent` se for submenu
+5. Adicionar card em `titulos-nossa-senhora.json` ou `ministerios.json`
+6. Criar `specs/spec-0.0.x.md` com resumo da entrega
+7. Atualizar `specs/version.json` (`contentVersion`, `specFile`, `releasedAt`)
+8. Atualizar `.cursor/rules/`, README e checklist
+9. Rodar `npm run test:specs`, `npm run build`, `npm run test:e2e`
+
+## Referência da versão atual
+
+Sempre ler `specs/version.json` → campo `specFile` aponta para o release notes ativo.
+
+## URL da seção mariana
+
+- Listagem: `/titulos-nossa-senhora`
+- Slug de conteúdo: `titulos-nossa-senhora`
+- URLs legadas `/imagens` redirecionam via `vercel.json`

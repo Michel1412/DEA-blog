@@ -1,16 +1,21 @@
 {
   "items": [
     { "label": "Home", "path": "/" },
-    { "label": "Imagens", "path": "/imagens" },
+    { "label": "Títulos de Nossa Senhora", "path": "/titulos-nossa-senhora" },
     {
       "label": "Nossa Senhora Auxiliadora",
-      "path": "/imagens/nossa-senhora-auxiliadora",
-      "parent": "/imagens"
+      "path": "/titulos-nossa-senhora/nossa-senhora-auxiliadora",
+      "parent": "/titulos-nossa-senhora"
     },
     {
-      "label": "Modelo (Imagens)",
-      "path": "/imagens/template",
-      "parent": "/imagens"
+      "label": "Nossa Senhora em Medjugorje",
+      "path": "/titulos-nossa-senhora/nossa-senhora-medjugorje",
+      "parent": "/titulos-nossa-senhora"
+    },
+    {
+      "label": "Modelo (Títulos de Nossa Senhora)",
+      "path": "/titulos-nossa-senhora/template",
+      "parent": "/titulos-nossa-senhora"
     },
     { "label": "Ministérios", "path": "/ministerios" },
     {

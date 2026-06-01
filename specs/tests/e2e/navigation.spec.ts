@@ -19,10 +19,10 @@ test.describe('Navbar horizontal', () => {
     await page.goto('/')
   })
 
-  test('exibe links de topo Home, Imagens e Ministérios', async ({ page }) => {
+  test('exibe links de topo Home, Títulos de Nossa Senhora e Ministérios', async ({ page }) => {
     const desktopNav = page.getByTestId('nav-desktop')
     await expect(desktopNav.getByTestId('nav-link-home')).toBeVisible()
-    await expect(desktopNav.getByTestId('nav-dropdown-imagens')).toBeVisible()
+    await expect(desktopNav.getByTestId('nav-dropdown-titulos-nossa-senhora')).toBeVisible()
     await expect(desktopNav.getByTestId('nav-dropdown-ministerios')).toBeVisible()
   })
 
@@ -81,7 +81,9 @@ test.describe('Navbar mobile', () => {
             ? `nav-mobile-link-${route.path.slice(1).replace(/\//g, '-')}`
             : `nav-mobile-link-${route.path.slice(1)}`
 
-      await mobileNav.getByTestId(testId).click()
+      const link = mobileNav.getByTestId(testId)
+      await expect(link).toBeVisible()
+      await link.click()
       await expect(page).toHaveURL(route.path)
     })
   }

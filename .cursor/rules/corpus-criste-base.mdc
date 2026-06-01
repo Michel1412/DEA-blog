@@ -13,7 +13,7 @@ alwaysApply: true
 
 ## Approved page model (mandatory)
 
-- Copy from `/imagens/template` or `/ministerios/template` for new pages
+- Copy from `/titulos-nossa-senhora/template` or `/ministerios/template` for new pages
 - Use `ContentPageTemplate` for hero + sections pages
 - Use `ListingPageTemplate` for index/listing pages
 - Use `PageShell` as the outer wrapper (via templates)
@@ -34,4 +34,5 @@ alwaysApply: true
 
 ## Version reference
 
-- Read `specs/spec-0.0.0.md` and `specs/version.json` for current baseline
+- Read `specs/version.json` → field `specFile` for current release notes
+- Versioning policy: `.cursor/rules/corpus-criste-versions.mdc` (each `0.0.x` = one new page)
