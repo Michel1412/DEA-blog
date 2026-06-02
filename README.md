@@ -15,6 +15,8 @@ Site institucional do Grupo Deus É Amor, construído com **Next.js 16**, **Reac
 | `/titulos-nossa-senhora/nossa-senhora-lourdes` | Nossa Senhora de Lourdes |
 | `/titulos-nossa-senhora/nossa-senhora-guadalupe` | Nossa Senhora de Guadalupe |
 | `/titulos-nossa-senhora/nossa-senhora-das-gracas` | Nossa Senhora das Graças |
+| `/titulos-nossa-senhora/nossa-senhora-da-comunicacao` | Nossa Senhora da Comunicação |
+| `/titulos-nossa-senhora/nossa-senhora-das-dores` | Nossa Senhora das Dores |
 | `/titulos-nossa-senhora/template` | **Modelo aprovado** para novas páginas de títulos marianos |
 | `/ministerios` | Lista de ministérios |
 | `/ministerios/dea-ajuda` | Ministério DEA Ajuda |

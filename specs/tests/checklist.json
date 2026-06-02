@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.1.5",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -115,6 +115,21 @@
       "id": "nossa-senhora-das-gracas-content",
       "description": "Página Nossa Senhora das Graças apresenta hero, aparições a Catarina Labouré e Medalha Milagrosa",
       "category": "content"
+    },
+    {
+      "id": "nossa-senhora-da-comunicacao-content",
+      "description": "Página Nossa Senhora da Comunicação apresenta hero, origem da devoção e mensagem para quem evangeliza pelos meios de comunicação",
+      "category": "content"
+    },
+    {
+      "id": "nossa-senhora-das-dores-content",
+      "description": "Página Nossa Senhora das Dores apresenta hero, sete dores de Maria, origem da devoção, promessas e terço das sete dores",
+      "category": "content"
+    },
+    {
+      "id": "dea-ajuda-hero-carousel",
+      "description": "Página DEA Ajuda usa carrossel de fundo no hero (backgroundImages) no padrão do projeto",
+      "category": "visual"
     },
     {
       "id": "footer-pillars-humildade",

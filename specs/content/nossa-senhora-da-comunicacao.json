@@ -1,0 +1,59 @@
+{
+  "slug": "nossa-senhora-da-comunicacao",
+  "meta": {
+    "title": "Nossa Senhora da Comunicação | Grupo Deus É Amor",
+    "description": "Título mariano que inspira a missão de comunicar a fé — apresentar Jesus ao mundo com verdade e amor."
+  },
+  "hero": {
+    "title": "Nossa Senhora da Comunicação",
+    "subtitle": "Inspiração para quem comunica a fé",
+    "quote": "Ó Maria da Comunicação, \nintercedei por todos nós\nque queremos comunicar ao mundo\no vosso Filho e Senhor nosso,\nJesus Cristo.",
+    "backgroundImage": "/images/nossa-senhora-da-comunicacao.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Quem é Nossa Senhora da Comunicação?",
+      "variant": "highlight",
+      "paragraphs": [
+        "Nossa Senhora da Comunicação é um título dado à Virgem Maria por seu papel de anunciar e apresentar Jesus ao mundo.",
+        "Com seu “sim” ao Anjo Gabriel, Maria acolheu a missão de levar Cristo à humanidade, tornando-se exemplo para todos os que comunicam a fé.",
+        "Ela nos ensina que comunicar é, antes de tudo, escutar, acolher e transmitir a verdade com amor."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Origem da Devoção",
+      "paragraphs": [
+        "A devoção tem origem em uma imagem localizada na cidade de Albert, na França, que retrata Maria apresentando o Menino Jesus.",
+        "Durante a Primeira Guerra Mundial, a basílica onde a imagem estava foi bombardeada, mas a imagem permaneceu de pé, tornando-se um sinal de esperança para os fiéis.",
+        "No Brasil, a devoção foi difundida pelos salesianos de Itatiaia (MG), que passaram a chamá-la de Nossa Senhora da Comunicação."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Modelo para quem comunica",
+      "paragraphs": [
+        "A imagem de Nossa Senhora da Comunicação recorda que a missão do comunicador católico é apresentar Jesus ao mundo.",
+        "Por isso, ela é considerada inspiração para aqueles que evangelizam através da palavra, da música, das imagens e dos meios de comunicação.",
+        "Seu exemplo nos convida a comunicar sempre com responsabilidade, verdade e amor."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Mensagem para Hoje",
+      "paragraphs": [
+        "Em meio a tantas vozes e informações, Maria nos mostra que a comunicação deve aproximar as pessoas de Deus e umas das outras.",
+        "Que Nossa Senhora da Comunicação interceda por todos os que anunciam o Evangelho, para que sejam instrumentos de luz, esperança e paz."
+      ],
+      "quote": "Nossa Senhora da Comunicação, rogai por nós!"
+    }
+  ]
+}

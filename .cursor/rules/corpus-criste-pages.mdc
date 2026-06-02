@@ -19,6 +19,8 @@ alwaysApply: false
 | Nossa Senhora de Lourdes | ContentPageTemplate compact | nossa-senhora-lourdes.json |
 | Nossa Senhora de Guadalupe | ContentPageTemplate compact | nossa-senhora-guadalupe.json |
 | Nossa Senhora das Graças | ContentPageTemplate compact | nossa-senhora-das-gracas.json |
+| Nossa Senhora da Comunicação | ContentPageTemplate compact | nossa-senhora-da-comunicacao.json |
+| Nossa Senhora das Dores | ContentPageTemplate compact | nossa-senhora-das-dores.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | Ministério Perseverança | Ministry landing (7 seções) | perseveranca.json |

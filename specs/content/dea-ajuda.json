@@ -9,7 +9,12 @@
     "highlight": "DEA",
     "subtitle": "Transformando Fé em Caridade",
     "tagline": "O coração solidário do Grupo Deus É Amor.",
-    "backgroundImage": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gDu1drW8E0523EXqdmJIaahvjltxAd.png",
+    "backgroundImage": "/images/dea-ajuda-carousel-01.png",
+    "backgroundImages": [
+      "/images/dea-ajuda-carousel-01.png",
+      "/images/dea-ajuda-carousel-02.png"
+    ],
+    "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
     "ctaLabel": "Assistir nossa história",
     "ctaHref": "#video"
   },

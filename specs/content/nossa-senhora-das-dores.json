@@ -1,0 +1,61 @@
+{
+  "slug": "nossa-senhora-das-dores",
+  "meta": {
+    "title": "Nossa Senhora das Dores | Grupo Deus É Amor",
+    "description": "Mater Dolorosa — devoção às sete dores de Maria e ao mistério da compaixão junto à cruz de Cristo."
+  },
+  "hero": {
+    "title": "Nossa Senhora das Dores",
+    "subtitle": "Mater Dolorosa — as sete dores de Maria",
+    "quote": "Mater Dolorosa",
+    "backgroundImage": "/images/nossa-senhora-das-dores.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Os sofrimentos de Maria",
+      "variant": "highlight",
+      "paragraphs": [
+        "O título de Nossa Senhora das Dores não está relacionado a uma aparição, como a maioria dos outros títulos, mas sim às imensas dores que Maria sofreu. Sua imagem contém sete adagas atravessando seu coração, uma para cada dor.",
+        "A profecia de Simeão sobre Jesus.",
+        "A fuga da Sagrada Família para o Egito.",
+        "O desaparecimento do Menino Jesus por três dias.",
+        "O encontro de Maria e Jesus a caminho do Calvário.",
+        "O sofrimento e morte de Jesus na cruz.",
+        "Maria recebendo o corpo de Jesus tirado da cruz.",
+        "O sepultamento de Jesus no santo sepulcro."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Origem da devoção",
+      "paragraphs": [
+        "Nossa Senhora das Dores é celebrada no dia 15 de setembro, data que marca o início de sua veneração no século XIII pela Ordem dos Servos de Maria em Florença, na Itália."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Promessas",
+      "paragraphs": [
+        "Ao longo da história, vários santos receberam promessas de Maria em decorrência da devoção às suas sete dores.",
+        "Entre eles estão Santa Isabel da Hungria, Santa Brígida da Suécia e Santo Afonso Maria de Ligório."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "O terço de Nossa Senhora das Dores",
+      "paragraphs": [
+        "A principal devoção a Nossa Senhora das Dores se faz pelo terço de Nossa Senhora das Dores, também conhecido como rosário das sete dores.",
+        "Nele se reza um Pai-Nosso e sete Ave-Marias para cada uma das sete dores."
+      ]
+    }
+  ]
+}
+

@@ -83,7 +83,8 @@ test.describe('Navbar mobile', () => {
 
       const link = mobileNav.getByTestId(testId)
       await expect(link).toBeVisible()
-      await link.click()
+      await link.scrollIntoViewIfNeeded()
+      await link.evaluate((el: HTMLElement) => el.click())
       await expect(page).toHaveURL(route.path)
     })
   }

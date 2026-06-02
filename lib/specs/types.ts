@@ -124,6 +124,16 @@ export const nossaSenhoraDasGracasContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
+export const nossaSenhoraDaComunicacaoContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-da-comunicacao'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
+export const nossaSenhoraDasDoresContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-das-dores'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
 
 export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
   slug: z.literal('titulos-nossa-senhora-template'),
@@ -200,6 +210,8 @@ export const ministryLandingFields = {
     subtitle: z.string(),
     tagline: z.string(),
     backgroundImage: z.string(),
+    backgroundImages: z.array(z.string()).min(1).optional(),
+    overlay: z.string().optional(),
     ctaLabel: z.string(),
     ctaHref: z.string(),
   }),
@@ -284,6 +296,10 @@ export type NossaSenhoraLaSaletteContent = z.infer<
 export type NossaSenhoraLourdesContent = z.infer<typeof nossaSenhoraLourdesContentSchema>
 export type NossaSenhoraGuadalupeContent = z.infer<typeof nossaSenhoraGuadalupeContentSchema>
 export type NossaSenhoraDasGracasContent = z.infer<typeof nossaSenhoraDasGracasContentSchema>
+export type NossaSenhoraDaComunicacaoContent = z.infer<
+  typeof nossaSenhoraDaComunicacaoContentSchema
+>
+export type NossaSenhoraDasDoresContent = z.infer<typeof nossaSenhoraDasDoresContentSchema>
 export type PerseverancaContent = z.infer<typeof perseverancaContentSchema>
 export type TitulosNossaSenhoraTemplateContent = z.infer<
   typeof titulosNossaSenhoraTemplateContentSchema
@@ -304,6 +320,8 @@ export type ContentSlug =
   | 'nossa-senhora-lourdes'
   | 'nossa-senhora-guadalupe'
   | 'nossa-senhora-das-gracas'
+  | 'nossa-senhora-da-comunicacao'
+  | 'nossa-senhora-das-dores'
   | 'titulos-nossa-senhora-template'
   | 'ministerios'
   | 'perseveranca'
@@ -320,6 +338,8 @@ const contentSchemas = {
   'nossa-senhora-lourdes': nossaSenhoraLourdesContentSchema,
   'nossa-senhora-guadalupe': nossaSenhoraGuadalupeContentSchema,
   'nossa-senhora-das-gracas': nossaSenhoraDasGracasContentSchema,
+  'nossa-senhora-da-comunicacao': nossaSenhoraDaComunicacaoContentSchema,
+  'nossa-senhora-das-dores': nossaSenhoraDasDoresContentSchema,
   'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
   perseveranca: perseverancaContentSchema,

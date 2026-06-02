@@ -8,6 +8,7 @@ test.describe('DEA Ajuda — regressão visual aprovada', () => {
   test('hero com título DEA Ajuda', async ({ page }) => {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('DEA')
     await expect(page.getByText('Transformando Fé em Caridade')).toBeVisible()
+    await expect(page.getByTestId('hero-background-carousel')).toBeVisible()
   })
 
   test('projetos realizados', async ({ page }) => {

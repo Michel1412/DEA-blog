@@ -12,6 +12,8 @@ import {
   nossaSenhoraLaSaletteContentSchema,
   nossaSenhoraGuadalupeContentSchema,
   nossaSenhoraDasGracasContentSchema,
+  nossaSenhoraDaComunicacaoContentSchema,
+  nossaSenhoraDasDoresContentSchema,
   nossaSenhoraLourdesContentSchema,
   nossaSenhoraMedjugorjeContentSchema,
   perseverancaContentSchema,
@@ -30,6 +32,8 @@ import {
   type NossaSenhoraLaSaletteContent,
   type NossaSenhoraGuadalupeContent,
   type NossaSenhoraDasGracasContent,
+  type NossaSenhoraDaComunicacaoContent,
+  type NossaSenhoraDasDoresContent,
   type NossaSenhoraLourdesContent,
   type NossaSenhoraMedjugorjeContent,
   type PerseverancaContent,
@@ -69,6 +73,8 @@ type ContentMap = {
   'nossa-senhora-lourdes': NossaSenhoraLourdesContent
   'nossa-senhora-guadalupe': NossaSenhoraGuadalupeContent
   'nossa-senhora-das-gracas': NossaSenhoraDasGracasContent
+  'nossa-senhora-da-comunicacao': NossaSenhoraDaComunicacaoContent
+  'nossa-senhora-das-dores': NossaSenhoraDasDoresContent
   'titulos-nossa-senhora-template': TitulosNossaSenhoraTemplateContent
   ministerios: MinisteriosContent
   perseveranca: PerseverancaContent
@@ -120,6 +126,16 @@ export function loadContent<S extends ContentSlug>(slug: S): ContentMap[S] {
         'content/nossa-senhora-das-gracas.json',
         nossaSenhoraDasGracasContentSchema,
       ) as ContentMap[S]
+    case 'nossa-senhora-da-comunicacao':
+      return readJsonFile(
+        'content/nossa-senhora-da-comunicacao.json',
+        nossaSenhoraDaComunicacaoContentSchema,
+      ) as ContentMap[S]
+    case 'nossa-senhora-das-dores':
+      return readJsonFile(
+        'content/nossa-senhora-das-dores.json',
+        nossaSenhoraDasDoresContentSchema,
+      ) as ContentMap[S]
     case 'titulos-nossa-senhora-template':
       return readJsonFile(
         'content/titulos-nossa-senhora-template.json',
@@ -161,6 +177,8 @@ export function validateAllSpecs(): void {
       'nossa-senhora-lourdes',
       'nossa-senhora-guadalupe',
       'nossa-senhora-das-gracas',
+      'nossa-senhora-da-comunicacao',
+      'nossa-senhora-das-dores',
       'titulos-nossa-senhora-template',
       'ministerios',
       'perseveranca',

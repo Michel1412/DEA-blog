@@ -66,6 +66,22 @@
       "available": true
     },
     {
+      "slug": "nossa-senhora-da-comunicacao",
+      "title": "Nossa Senhora da Comunicação",
+      "description": "Inspiração para quem comunica a fé — apresentar Jesus ao mundo com verdade e amor.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-da-comunicacao",
+      "emoji": "📣",
+      "available": true
+    },
+    {
+      "slug": "nossa-senhora-das-dores",
+      "title": "Nossa Senhora das Dores",
+      "description": "Mater Dolorosa — as sete dores de Maria, compaixão e esperança junto à cruz de Cristo.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-das-dores",
+      "emoji": "🗡️",
+      "available": true
+    },
+    {
       "slug": "template",
       "title": "Modelo (Títulos de Nossa Senhora)",
       "description": "Página de referência aprovada para novas devoções marianas.",

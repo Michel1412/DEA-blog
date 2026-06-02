@@ -29,6 +29,9 @@ alwaysApply: false
 | 0.1.0 | Revisão técnica (componentização, tokens, docs) | — |
 | 0.1.1 | Perseverança no layout ministry-landing | `/ministerios/perseveranca` |
 | 0.1.2 | Rodapé (Humildade) + Nossa Senhora das Graças | `/titulos-nossa-senhora/nossa-senhora-das-gracas` |
+| 0.1.3 | Nossa Senhora da Comunicação | `/titulos-nossa-senhora/nossa-senhora-da-comunicacao` |
+| 0.1.4 | Nossa Senhora das Dores | `/titulos-nossa-senhora/nossa-senhora-das-dores` |
+| 0.1.5 | Carrossel no hero do DEA Ajuda + regra | `/ministerios/dea-ajuda` |
 
 ## Checklist obrigatório por versão
 

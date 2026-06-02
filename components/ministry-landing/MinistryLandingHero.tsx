@@ -1,5 +1,7 @@
+import { HeroBackgroundCarousel } from '@/components/content/HeroBackgroundCarousel'
 import { BackgroundImageLayer } from '@/components/ui/BackgroundImageLayer'
-import { goldText, ministryNameGlow } from '@/lib/theme'
+import { GradientOverlay } from '@/components/ui/GradientOverlay'
+import { goldText, heroOverlayDefault, ministryNameGlow } from '@/lib/theme'
 import type { MinistryLandingContent } from '@/lib/specs/types'
 
 type MinistryLandingHeroProps = {
@@ -7,10 +9,20 @@ type MinistryLandingHeroProps = {
 }
 
 export function MinistryLandingHero({ hero }: MinistryLandingHeroProps) {
+  const overlay = hero.overlay ?? heroOverlayDefault
+  const carouselImages =
+    hero.backgroundImages && hero.backgroundImages.length > 1 ? hero.backgroundImages : null
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      <BackgroundImageLayer src={hero.backgroundImage} />
-      <div className="absolute inset-0 bg-black/75" />
+      {carouselImages ? (
+        <HeroBackgroundCarousel images={carouselImages} overlay={overlay} />
+      ) : (
+        <>
+          <BackgroundImageLayer src={hero.backgroundImage} />
+          <GradientOverlay overlay={overlay} />
+        </>
+      )}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
