@@ -33,6 +33,11 @@
       "parent": "/titulos-nossa-senhora"
     },
     {
+      "label": "Nossa Senhora das Graças",
+      "path": "/titulos-nossa-senhora/nossa-senhora-das-gracas",
+      "parent": "/titulos-nossa-senhora"
+    },
+    {
       "label": "Modelo (Títulos de Nossa Senhora)",
       "path": "/titulos-nossa-senhora/template",
       "parent": "/titulos-nossa-senhora"

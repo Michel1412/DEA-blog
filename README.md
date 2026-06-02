@@ -14,6 +14,7 @@ Site institucional do Grupo Deus É Amor, construído com **Next.js 16**, **Reac
 | `/titulos-nossa-senhora/nossa-senhora-la-salette` | Nossa Senhora de La Salette |
 | `/titulos-nossa-senhora/nossa-senhora-lourdes` | Nossa Senhora de Lourdes |
 | `/titulos-nossa-senhora/nossa-senhora-guadalupe` | Nossa Senhora de Guadalupe |
+| `/titulos-nossa-senhora/nossa-senhora-das-gracas` | Nossa Senhora das Graças |
 | `/titulos-nossa-senhora/template` | **Modelo aprovado** para novas páginas de títulos marianos |
 | `/ministerios` | Lista de ministérios |
 | `/ministerios/dea-ajuda` | Ministério DEA Ajuda |
@@ -32,7 +33,7 @@ Novas páginas devem copiar:
 - Page: `app/titulos-nossa-senhora/template/page.tsx` ou `app/ministerios/template/page.tsx`
 - Componentes: `ContentPageTemplate`, `ListingPageTemplate`, `PageShell`
 
-Consulte `specs/spec-0.1.0.md` (versão atual), `specs/spec-0.0.5.md` e releases `0.0.x` (baseline em `spec-0.0.0.md`). Padrões de código: [`specs/CORPUS-CRISTE-ENGINEERING.md`](specs/CORPUS-CRISTE-ENGINEERING.md).
+Consulte `specs/spec-0.1.2.md` (versão atual), releases `0.1.x` / `0.0.x` (baseline em `spec-0.0.0.md`). Padrões de código: [`specs/CORPUS-CRISTE-ENGINEERING.md`](specs/CORPUS-CRISTE-ENGINEERING.md).
 
 ## Versionamento
 

@@ -27,6 +27,9 @@ test.describe('Home — regressão visual aprovada', () => {
     await expect(footer.getByTestId('footer-easter-egg')).toContainText(
       'Ministério DEA Programadores',
     )
-    await expect(footer.getByTestId('footer-pillars')).toContainText('Amizade')
+    const pillars = footer.getByTestId('footer-pillars')
+    await expect(pillars).toContainText('Amizade')
+    await expect(pillars).toContainText('Humildade')
+    await expect(pillars).not.toContainText('Compromisso')
   })
 })

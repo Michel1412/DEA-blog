@@ -26,7 +26,7 @@ export function Footer() {
         Ministério DEA Programadores
       </p>
       <p className="leading-relaxed text-foreground/80" data-testid="footer-pillars">
-        Evangelização • Amizade • Compromisso • Serviço
+        Evangelização • Amizade • Humildade • Serviço
       </p>
       <p className="opacity-80 text-sm mt-4" data-testid="footer-copyright">
         © 2026 Grupo Deus É Amor. Todos os direitos reservados.

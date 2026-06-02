@@ -18,6 +18,7 @@ alwaysApply: false
 | Nossa Senhora de La Salette | ContentPageTemplate compact | nossa-senhora-la-salette.json |
 | Nossa Senhora de Lourdes | ContentPageTemplate compact | nossa-senhora-lourdes.json |
 | Nossa Senhora de Guadalupe | ContentPageTemplate compact | nossa-senhora-guadalupe.json |
+| Nossa Senhora das Graças | ContentPageTemplate compact | nossa-senhora-das-gracas.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | Ministério Perseverança | Ministry landing (7 seções) | perseveranca.json |

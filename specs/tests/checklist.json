@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -110,6 +110,16 @@
       "id": "guadalupe-content",
       "description": "Página Guadalupe apresenta hero com tilma, aparições a Juan Diego e mensagem da Padroeira da América",
       "category": "content"
+    },
+    {
+      "id": "nossa-senhora-das-gracas-content",
+      "description": "Página Nossa Senhora das Graças apresenta hero, aparições a Catarina Labouré e Medalha Milagrosa",
+      "category": "content"
+    },
+    {
+      "id": "footer-pillars-humildade",
+      "description": "Rodapé exibe pilares Evangelização • Amizade • Humildade • Serviço",
+      "category": "footer"
     },
     {
       "id": "engineering-patterns",

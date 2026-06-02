@@ -1,0 +1,67 @@
+{
+  "slug": "nossa-senhora-das-gracas",
+  "meta": {
+    "title": "Nossa Senhora das Graças | Grupo Deus É Amor",
+    "description": "Devoção iniciada em 1830 com as aparições a Santa Catarina Labouré em Paris — origem da Medalha Milagrosa."
+  },
+  "hero": {
+    "title": "Nossa Senhora das Graças",
+    "subtitle": "1830 — Paris, Filhas da Caridade",
+    "quote": "Ó Maria concebida sem pecado, rogai por nós que recorremos a vós.",
+    "backgroundImage": "/images/nossa-senhora-das-gracas.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "A devoção e as três aparições",
+      "variant": "highlight",
+      "paragraphs": [
+        "A devoção a Nossa Senhora das Graças começou no ano de 1830 com as aparições à Catarina Labouré, que vivia no convento das Filhas da Caridade. Ao todo, foram três aparições e todas aconteceram no mesmo convento, em Paris."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Primeira aparição",
+      "paragraphs": [
+        "A primeira aparição foi de 18 para 19 de julho de 1830, quando Nossa Senhora revelou a Catarina as perseguições que aconteceriam na França."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Segunda aparição",
+      "variant": "highlight",
+      "paragraphs": [
+        "A segunda aparição aconteceu em 27 de novembro de 1830 e foi dela que surgiu a Medalha Milagrosa. A Virgem Maria apareceu sobre um globo, pisando em uma serpente e segurando nas mãos um globo menor. De suas mãos saíam raios brilhantes de luz, formando um quadro oval, que continha as seguintes palavras: \"Ó Maria concebida sem pecado, rogai por nós que recorremos a vós\". No reverso do quadro havia um \"M\" sobre uma cruz e, por baixo, os corações de Nosso Senhor Jesus Cristo e da Virgem Maria."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "A Medalha Milagrosa",
+      "paragraphs": [
+        "Na segunda aparição, Nossa Senhora pediu a Catarina que mandasse fazer uma medalha igual ao que havia visto. E assim foi cunhada, em Paris, e logo se espalhou pelo mundo inteiro, operando graças tão numerosas e extraordinárias que os fiéis passaram a chamá-la \"Medalha Milagrosa\"."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Terceira aparição",
+      "paragraphs": [
+        "A terceira aparição ocorreu no final de dezembro de 1830. Nossa Senhora apareceu junto de um sacrário para reforçar o pedido da medalha, que ela fosse distribuída a todos."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Dogma e festa",
+      "paragraphs": [
+        "Em 1854, o Papa Pio IX proclamou o dogma da Imaculada Conceição; a frase escrita na medalha se tornou uma importante verdade da Igreja: \"Ó Maria concebida sem pecado, rogai por nós que recorremos a vós\".",
+        "Em várias partes do mundo, é comemorado no dia 27 de novembro a festa em homenagem a Nossa Senhora das Graças."
+      ]
+    }
+  ]
+}
