@@ -140,14 +140,6 @@ export const nossaSenhoraDeFatimaContentSchema = contentPageSchema.extend({
 })
 
 
-export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
-  slug: z.literal('titulos-nossa-senhora-template'),
-})
-
-export const ministeriosTemplateContentSchema = contentPageSchema.extend({
-  slug: z.literal('ministerios-template'),
-})
-
 export const galleryItemSchema = z.object({
   slug: z.string(),
   title: z.string(),
@@ -307,10 +299,6 @@ export type NossaSenhoraDaComunicacaoContent = z.infer<
 export type NossaSenhoraDasDoresContent = z.infer<typeof nossaSenhoraDasDoresContentSchema>
 export type NossaSenhoraDeFatimaContent = z.infer<typeof nossaSenhoraDeFatimaContentSchema>
 export type PerseverancaContent = z.infer<typeof perseverancaContentSchema>
-export type TitulosNossaSenhoraTemplateContent = z.infer<
-  typeof titulosNossaSenhoraTemplateContentSchema
->
-export type MinisteriosTemplateContent = z.infer<typeof ministeriosTemplateContentSchema>
 export type MinisteriosContent = z.infer<typeof ministeriosContentSchema>
 export type MinistryLandingContent = z.infer<typeof ministryLandingContentSchema>
 export type DeaAjudaContent = z.infer<typeof deaAjudaContentSchema>
@@ -329,10 +317,8 @@ export type ContentSlug =
   | 'nossa-senhora-da-comunicacao'
   | 'nossa-senhora-das-dores'
   | 'nossa-senhora-de-fatima'
-  | 'titulos-nossa-senhora-template'
   | 'ministerios'
   | 'perseveranca'
-  | 'ministerios-template'
   | 'dea-ajuda'
 
 const contentSchemas = {
@@ -348,10 +334,8 @@ const contentSchemas = {
   'nossa-senhora-da-comunicacao': nossaSenhoraDaComunicacaoContentSchema,
   'nossa-senhora-das-dores': nossaSenhoraDasDoresContentSchema,
   'nossa-senhora-de-fatima': nossaSenhoraDeFatimaContentSchema,
-  'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
   perseveranca: perseverancaContentSchema,
-  'ministerios-template': ministeriosTemplateContentSchema,
   'dea-ajuda': deaAjudaContentSchema,
 } as const
 

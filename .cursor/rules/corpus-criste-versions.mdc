@@ -10,7 +10,7 @@ alwaysApply: false
 
 **Por padrão, cada versão `0.0.x` adiciona uma nova página de conteúdo.** Um release spec pode agrupar várias páginas (ex.: v0.0.3 = 3 páginas). Sempre usar o modelo aprovado:
 
-- Títulos de Nossa Senhora / devoções → `ContentPageTemplate` (copiar de `titulos-nossa-senhora-template`)
+- Títulos de Nossa Senhora / devoções → `ContentPageTemplate` (copiar de `.cursor/examples/content-page/`)
 - Ministérios → `ContentPageTemplate` ou `ListingPageTemplate` conforme o caso
 - Exceção: layouts custom só com aprovação explícita (ex.: DEA Ajuda)
 
@@ -33,11 +33,14 @@ alwaysApply: false
 | 0.1.4 | Nossa Senhora das Dores | `/titulos-nossa-senhora/nossa-senhora-das-dores` |
 | 0.1.5 | Carrossel no hero do DEA Ajuda + regra | `/ministerios/dea-ajuda` |
 | 0.1.6 | Nossa Senhora de Fátima | `/titulos-nossa-senhora/nossa-senhora-de-fatima` |
+| 1.0.0 | Primeira versão completa — remoção de páginas-modelo públicas; exemplo em `.cursor/examples/content-page/` | — |
+
+A partir de **1.0.0**, não existem rotas `/titulos-nossa-senhora/template` nem `/ministerios/template` no site.
 
 ## Checklist obrigatório por versão
 
 1. Criar `specs/content/{slug}.json`
-2. Criar `app/.../page.tsx` mínimo (copiar de `app/titulos-nossa-senhora/template/page.tsx`)
+2. Criar `app/.../page.tsx` mínimo (copiar de `.cursor/examples/content-page/page.example.tsx`)
 3. Registrar slug em `lib/specs/types.ts` + `lib/specs/loader.ts`
 4. Adicionar rota em `specs/routes.json` com `parent` se for submenu
 5. Adicionar card em `titulos-nossa-senhora.json` ou `ministerios.json`

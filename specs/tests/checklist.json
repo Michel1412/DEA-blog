@@ -1,5 +1,5 @@
 {
-  "version": "0.1.6",
+  "version": "1.0.0",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -8,7 +8,7 @@
     },
     {
       "id": "nav-dropdown-children",
-      "description": "Dropdowns de Títulos de Nossa Senhora e Ministérios listam páginas filhas incluindo modelos",
+      "description": "Dropdowns de Títulos de Nossa Senhora e Ministérios listam todas as páginas filhas de produção",
       "category": "navigation"
     },
     {
@@ -22,13 +22,13 @@
       "category": "navigation"
     },
     {
-      "id": "template-pages",
-      "description": "Páginas-modelo /titulos-nossa-senhora/template e /ministerios/template usam ContentPageTemplate",
+      "id": "agent-content-example",
+      "description": "Exemplo para novas páginas em .cursor/examples/content-page/ (JSON + page.tsx + README)",
       "category": "content"
     },
     {
       "id": "approved-model",
-      "description": "Novas páginas devem copiar JSON e page.tsx dos modelos aprovados",
+      "description": "Novas páginas devem copiar de .cursor/examples/content-page/, não inventar layout",
       "category": "content"
     },
     {

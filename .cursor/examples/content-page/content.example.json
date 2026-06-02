@@ -1,0 +1,43 @@
+{
+  "slug": "your-slug",
+  "meta": {
+    "title": "Título da página | Grupo Deus É Amor",
+    "description": "Descrição curta para SEO e compartilhamento."
+  },
+  "hero": {
+    "title": "Título principal",
+    "subtitle": "Subtítulo ou contexto da devoção",
+    "quote": "Citação ou frase de destaque (opcional).",
+    "backgroundImage": "/images/your-hero.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Primeira seção",
+      "variant": "highlight",
+      "paragraphs": [
+        "Parágrafo introdutório.",
+        "Segundo parágrafo com mais contexto."
+      ],
+      "quote": "Citação opcional no rodapé do card."
+    },
+    {
+      "type": "card",
+      "title": "Segunda seção",
+      "paragraphs": [
+        "Conteúdo adicional em cards padrão."
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Bloco de citação final."
+    }
+  ]
+}

@@ -22,11 +22,11 @@ alwaysApply: false
 | Nossa Senhora da Comunicação | ContentPageTemplate compact | nossa-senhora-da-comunicacao.json |
 | Nossa Senhora das Dores | ContentPageTemplate compact | nossa-senhora-das-dores.json |
 | Nossa Senhora de Fátima | ContentPageTemplate compact | nossa-senhora-de-fatima.json |
-| **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | Ministério Perseverança | Ministry landing (7 seções) | perseveranca.json |
 | DEA Ajuda | Ministry landing (7 seções) | dea-ajuda.json |
-| **Ministérios template** | ContentPageTemplate compact | ministerios-template.json |
+
+**Novo conteúdo:** copiar de `.cursor/examples/content-page/` (não há rotas `/template` públicas).
 
 ## Minimal page.tsx (copy exactly)
 
@@ -49,8 +49,8 @@ export default function Page() {
 
 ## New page checklist
 
-1. Copy JSON from `titulos-nossa-senhora-template.json` or `ministerios-template.json`
-2. Copy `app/titulos-nossa-senhora/template/page.tsx` (or ministerios equivalent)
+1. Copy `content.example.json` and `page.example.tsx` from `.cursor/examples/content-page/`
+2. Place JSON in `specs/content/{slug}.json` and page in `app/.../page.tsx`
 3. Register slug in `lib/specs/types.ts` + `lib/specs/loader.ts`
 4. Add route in `specs/routes.json` with `parent`
 5. Add listing card in `titulos-nossa-senhora.json` or `ministerios.json`

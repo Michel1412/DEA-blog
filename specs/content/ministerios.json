@@ -26,14 +26,6 @@
       "available": true
     },
     {
-      "slug": "template",
-      "title": "Modelo (Ministérios)",
-      "description": "Página de referência aprovada para novos ministérios.",
-      "path": "/ministerios/template",
-      "emoji": "📋",
-      "available": true
-    },
-    {
       "slug": "louvor",
       "title": "Louvor",
       "description": "Ministério de música e adoração — em breve mais informações.",

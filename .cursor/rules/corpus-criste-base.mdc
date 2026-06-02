@@ -13,7 +13,7 @@ alwaysApply: true
 
 ## Approved page model (mandatory)
 
-- Copy from `/titulos-nossa-senhora/template` or `/ministerios/template` for new pages
+- Copy from `.cursor/examples/content-page/` for new pages (see README there)
 - Use `ContentPageTemplate` for hero + sections pages
 - Use `ListingPageTemplate` for index/listing pages
 - Use `PageShell` as the outer wrapper (via templates)
@@ -35,5 +35,5 @@ alwaysApply: true
 ## Version reference
 
 - Read `specs/version.json` → field `specFile` for current release notes
-- Versioning policy: `.cursor/rules/corpus-criste-versions.mdc` (each `0.0.x` = one new page)
+- Versioning policy: `.cursor/rules/corpus-criste-versions.mdc` (releases `0.0.x` / `0.1.x` / `1.0.0+`)
 - **Engenharia e padrões de código:** [`specs/CORPUS-CRISTE-ENGINEERING.md`](../specs/CORPUS-CRISTE-ENGINEERING.md) — hierarquia de componentes, o que evitar, Server vs Client

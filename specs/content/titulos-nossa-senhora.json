@@ -88,14 +88,6 @@
       "path": "/titulos-nossa-senhora/nossa-senhora-de-fatima",
       "emoji": "☀️",
       "available": true
-    },
-    {
-      "slug": "template",
-      "title": "Modelo (Títulos de Nossa Senhora)",
-      "description": "Página de referência aprovada para novas devoções marianas.",
-      "path": "/titulos-nossa-senhora/template",
-      "emoji": "📋",
-      "available": true
     }
   ]
 }
