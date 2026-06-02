@@ -1,5 +1,5 @@
 ---
-description: CorpusCriste versioning policy — each 0.0.x release adds one new page
+description: CorpusCriste versioning policy — each 0.0.x release adds page(s) per spec
 globs: specs/version.json, specs/spec-*.md, specs/content/**
 alwaysApply: false
 ---
@@ -8,7 +8,7 @@ alwaysApply: false
 
 ## Regra principal
 
-**Cada versão `0.0.x` adiciona exatamente uma nova página de conteúdo**, usando sempre o modelo aprovado:
+**Por padrão, cada versão `0.0.x` adiciona uma nova página de conteúdo.** Um release spec pode agrupar várias páginas (ex.: v0.0.3 = 3 páginas). Sempre usar o modelo aprovado:
 
 - Títulos de Nossa Senhora / devoções → `ContentPageTemplate` (copiar de `titulos-nossa-senhora-template`)
 - Ministérios → `ContentPageTemplate` ou `ListingPageTemplate` conforme o caso
@@ -21,6 +21,10 @@ alwaysApply: false
 | 0.0.0 | Baseline (templates, navbar) | — |
 | 0.0.1 | Nossa Senhora em Medjugorje | `/titulos-nossa-senhora/nossa-senhora-medjugorje` |
 | 0.0.2 | Nossa Senhora Aparecida | `/titulos-nossa-senhora/nossa-senhora-aparecida` |
+| 0.0.3 | Ministério Perseverança | `/ministerios/perseveranca` |
+| 0.0.3 | Nossa Senhora de La Salette | `/titulos-nossa-senhora/nossa-senhora-la-salette` |
+| 0.0.3 | Nossa Senhora de Lourdes | `/titulos-nossa-senhora/nossa-senhora-lourdes` |
+| 0.0.4 | Nossa Senhora de Guadalupe | `/titulos-nossa-senhora/nossa-senhora-guadalupe` |
 
 ## Checklist obrigatório por versão
 

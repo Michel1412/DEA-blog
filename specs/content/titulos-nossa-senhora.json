@@ -34,6 +34,30 @@
       "available": true
     },
     {
+      "slug": "nossa-senhora-la-salette",
+      "title": "Nossa Senhora de La Salette",
+      "description": "Aparição de 1846 nos Alpes franceses — a Mãe que chora por seus filhos.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-la-salette",
+      "emoji": "💧",
+      "available": true
+    },
+    {
+      "slug": "nossa-senhora-lourdes",
+      "title": "Nossa Senhora de Lourdes",
+      "description": "Aparições a Bernadette em 1858 — Imaculada Conceição na gruta de Massabielle.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-lourdes",
+      "emoji": "🕯️",
+      "available": true
+    },
+    {
+      "slug": "nossa-senhora-guadalupe",
+      "title": "Nossa Senhora de Guadalupe",
+      "description": "Padroeira da América Latina — aparições a Juan Diego em Tepeyac, 1531.",
+      "path": "/titulos-nossa-senhora/nossa-senhora-guadalupe",
+      "emoji": "🌹",
+      "available": true
+    },
+    {
       "slug": "template",
       "title": "Modelo (Títulos de Nossa Senhora)",
       "description": "Página de referência aprovada para novas devoções marianas.",

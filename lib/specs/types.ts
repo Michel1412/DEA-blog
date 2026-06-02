@@ -97,6 +97,26 @@ export const nossaSenhoraAparecidaContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
+export const nossaSenhoraLaSaletteContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-la-salette'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
+export const nossaSenhoraLourdesContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-lourdes'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
+export const nossaSenhoraGuadalupeContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-guadalupe'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
+export const perseverancaContentSchema = contentPageSchema.extend({
+  slug: z.literal('perseveranca'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
 export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
   slug: z.literal('titulos-nossa-senhora-template'),
 })
@@ -239,6 +259,12 @@ export type NossaSenhoraMedjugorjeContent = z.infer<
 export type NossaSenhoraAparecidaContent = z.infer<
   typeof nossaSenhoraAparecidaContentSchema
 >
+export type NossaSenhoraLaSaletteContent = z.infer<
+  typeof nossaSenhoraLaSaletteContentSchema
+>
+export type NossaSenhoraLourdesContent = z.infer<typeof nossaSenhoraLourdesContentSchema>
+export type NossaSenhoraGuadalupeContent = z.infer<typeof nossaSenhoraGuadalupeContentSchema>
+export type PerseverancaContent = z.infer<typeof perseverancaContentSchema>
 export type TitulosNossaSenhoraTemplateContent = z.infer<
   typeof titulosNossaSenhoraTemplateContentSchema
 >
@@ -253,8 +279,12 @@ export type ContentSlug =
   | 'nossa-senhora-auxiliadora'
   | 'nossa-senhora-medjugorje'
   | 'nossa-senhora-aparecida'
+  | 'nossa-senhora-la-salette'
+  | 'nossa-senhora-lourdes'
+  | 'nossa-senhora-guadalupe'
   | 'titulos-nossa-senhora-template'
   | 'ministerios'
+  | 'perseveranca'
   | 'ministerios-template'
   | 'dea-ajuda'
 
@@ -264,8 +294,12 @@ const contentSchemas = {
   'nossa-senhora-auxiliadora': nossaSenhoraAuxiliadoraContentSchema,
   'nossa-senhora-medjugorje': nossaSenhoraMedjugorjeContentSchema,
   'nossa-senhora-aparecida': nossaSenhoraAparecidaContentSchema,
+  'nossa-senhora-la-salette': nossaSenhoraLaSaletteContentSchema,
+  'nossa-senhora-lourdes': nossaSenhoraLourdesContentSchema,
+  'nossa-senhora-guadalupe': nossaSenhoraGuadalupeContentSchema,
   'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
+  perseveranca: perseverancaContentSchema,
   'ministerios-template': ministeriosTemplateContentSchema,
   'dea-ajuda': deaAjudaContentSchema,
 } as const

@@ -18,6 +18,21 @@
       "parent": "/titulos-nossa-senhora"
     },
     {
+      "label": "Nossa Senhora de La Salette",
+      "path": "/titulos-nossa-senhora/nossa-senhora-la-salette",
+      "parent": "/titulos-nossa-senhora"
+    },
+    {
+      "label": "Nossa Senhora de Lourdes",
+      "path": "/titulos-nossa-senhora/nossa-senhora-lourdes",
+      "parent": "/titulos-nossa-senhora"
+    },
+    {
+      "label": "Nossa Senhora de Guadalupe",
+      "path": "/titulos-nossa-senhora/nossa-senhora-guadalupe",
+      "parent": "/titulos-nossa-senhora"
+    },
+    {
       "label": "Modelo (Títulos de Nossa Senhora)",
       "path": "/titulos-nossa-senhora/template",
       "parent": "/titulos-nossa-senhora"
@@ -26,6 +41,11 @@
     {
       "label": "DEA Ajuda",
       "path": "/ministerios/dea-ajuda",
+      "parent": "/ministerios"
+    },
+    {
+      "label": "Perseverança",
+      "path": "/ministerios/perseveranca",
       "parent": "/ministerios"
     },
     {

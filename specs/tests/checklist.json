@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.4",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -84,6 +84,26 @@
     {
       "id": "aparecida-content",
       "description": "Página Aparecida apresenta hero com estátua, cards e história dos pescadores no Paraíba",
+      "category": "content"
+    },
+    {
+      "id": "perseveranca-content",
+      "description": "Página Perseverança apresenta hero com foto do grupo, cards de formação e chamado ao serviço",
+      "category": "content"
+    },
+    {
+      "id": "la-salette-content",
+      "description": "Página La Salette apresenta hero, aparição de 1846 e mensagem da Mãe que chora",
+      "category": "content"
+    },
+    {
+      "id": "lourdes-content",
+      "description": "Página Lourdes apresenta hero, Bernadette na gruta e mensagem da Imaculada Conceição",
+      "category": "content"
+    },
+    {
+      "id": "guadalupe-content",
+      "description": "Página Guadalupe apresenta hero com tilma, aparições a Juan Diego e mensagem da Padroeira da América",
       "category": "content"
     }
   ]

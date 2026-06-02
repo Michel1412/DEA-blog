@@ -15,8 +15,12 @@ alwaysApply: false
 | Nossa Senhora Auxiliadora | ContentPageTemplate compact | nossa-senhora-auxiliadora.json |
 | Nossa Senhora em Medjugorje | ContentPageTemplate compact | nossa-senhora-medjugorje.json |
 | Nossa Senhora Aparecida | ContentPageTemplate compact | nossa-senhora-aparecida.json |
+| Nossa Senhora de La Salette | ContentPageTemplate compact | nossa-senhora-la-salette.json |
+| Nossa Senhora de Lourdes | ContentPageTemplate compact | nossa-senhora-lourdes.json |
+| Nossa Senhora de Guadalupe | ContentPageTemplate compact | nossa-senhora-guadalupe.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
+| Ministério Perseverança | ContentPageTemplate compact | perseveranca.json |
 | DEA Ajuda | Custom (do not copy) | dea-ajuda.json |
 | **Ministérios template** | ContentPageTemplate compact | ministerios-template.json |
 

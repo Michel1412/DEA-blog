@@ -7,9 +7,13 @@ import {
   homeContentSchema,
   ministeriosContentSchema,
   ministeriosTemplateContentSchema,
-  nossaSenhoraAuxiliadoraContentSchema,
   nossaSenhoraAparecidaContentSchema,
+  nossaSenhoraAuxiliadoraContentSchema,
+  nossaSenhoraLaSaletteContentSchema,
+  nossaSenhoraGuadalupeContentSchema,
+  nossaSenhoraLourdesContentSchema,
   nossaSenhoraMedjugorjeContentSchema,
+  perseverancaContentSchema,
   routesSchema,
   titulosNossaSenhoraContentSchema,
   titulosNossaSenhoraTemplateContentSchema,
@@ -20,9 +24,13 @@ import {
   type HomeContent,
   type MinisteriosContent,
   type MinisteriosTemplateContent,
-  type NossaSenhoraAuxiliadoraContent,
   type NossaSenhoraAparecidaContent,
+  type NossaSenhoraAuxiliadoraContent,
+  type NossaSenhoraLaSaletteContent,
+  type NossaSenhoraGuadalupeContent,
+  type NossaSenhoraLourdesContent,
   type NossaSenhoraMedjugorjeContent,
+  type PerseverancaContent,
   type RoutesSpec,
   type TitulosNossaSenhoraContent,
   type TitulosNossaSenhoraTemplateContent,
@@ -55,8 +63,12 @@ type ContentMap = {
   'nossa-senhora-auxiliadora': NossaSenhoraAuxiliadoraContent
   'nossa-senhora-medjugorje': NossaSenhoraMedjugorjeContent
   'nossa-senhora-aparecida': NossaSenhoraAparecidaContent
+  'nossa-senhora-la-salette': NossaSenhoraLaSaletteContent
+  'nossa-senhora-lourdes': NossaSenhoraLourdesContent
+  'nossa-senhora-guadalupe': NossaSenhoraGuadalupeContent
   'titulos-nossa-senhora-template': TitulosNossaSenhoraTemplateContent
   ministerios: MinisteriosContent
+  perseveranca: PerseverancaContent
   'ministerios-template': MinisteriosTemplateContent
   'dea-ajuda': DeaAjudaContent
 }
@@ -85,6 +97,21 @@ export function loadContent<S extends ContentSlug>(slug: S): ContentMap[S] {
         'content/nossa-senhora-aparecida.json',
         nossaSenhoraAparecidaContentSchema,
       ) as ContentMap[S]
+    case 'nossa-senhora-la-salette':
+      return readJsonFile(
+        'content/nossa-senhora-la-salette.json',
+        nossaSenhoraLaSaletteContentSchema,
+      ) as ContentMap[S]
+    case 'nossa-senhora-lourdes':
+      return readJsonFile(
+        'content/nossa-senhora-lourdes.json',
+        nossaSenhoraLourdesContentSchema,
+      ) as ContentMap[S]
+    case 'nossa-senhora-guadalupe':
+      return readJsonFile(
+        'content/nossa-senhora-guadalupe.json',
+        nossaSenhoraGuadalupeContentSchema,
+      ) as ContentMap[S]
     case 'titulos-nossa-senhora-template':
       return readJsonFile(
         'content/titulos-nossa-senhora-template.json',
@@ -95,6 +122,8 @@ export function loadContent<S extends ContentSlug>(slug: S): ContentMap[S] {
         'content/ministerios.json',
         ministeriosContentSchema,
       ) as ContentMap[S]
+    case 'perseveranca':
+      return readJsonFile('content/perseveranca.json', perseverancaContentSchema) as ContentMap[S]
     case 'ministerios-template':
       return readJsonFile(
         'content/ministerios-template.json',
@@ -120,8 +149,12 @@ export function validateAllSpecs(): void {
       'nossa-senhora-auxiliadora',
       'nossa-senhora-medjugorje',
       'nossa-senhora-aparecida',
+      'nossa-senhora-la-salette',
+      'nossa-senhora-lourdes',
+      'nossa-senhora-guadalupe',
       'titulos-nossa-senhora-template',
       'ministerios',
+      'perseveranca',
       'ministerios-template',
       'dea-ajuda',
     ] as const

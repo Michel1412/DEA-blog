@@ -1,0 +1,71 @@
+{
+  "slug": "nossa-senhora-guadalupe",
+  "meta": {
+    "title": "Nossa Senhora de Guadalupe | Grupo Deus É Amor",
+    "description": "Padroeira da América Latina — aparições a Juan Diego em Tepeyac em dezembro de 1531, tilma milagrosa e mensagem de esperança."
+  },
+  "hero": {
+    "title": "Nossa Senhora de Guadalupe",
+    "subtitle": "Padroeira da América Latina — 12 de dezembro de 1531",
+    "quote": "Não estou eu aqui, que sou tua Mãe?",
+    "backgroundImage": "/images/nossa-senhora-guadalupe.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "A Mãe que veio ao encontro dos povos da América",
+      "variant": "highlight",
+      "paragraphs": [
+        "Entre as mais belas manifestações marianas reconhecidas pela Igreja, destaca-se a devoção a Nossa Senhora de Guadalupe, Padroeira da América Latina e de todo o continente americano. Sua história está profundamente ligada à evangelização das Américas e ao amor materno de Maria por seus filhos.",
+        "As aparições aconteceram em dezembro de 1531, poucos anos após a chegada dos espanhóis ao território mexicano. Em um período marcado por conflitos culturais, sofrimento e incertezas, a Virgem Maria escolheu manifestar-se a um simples indígena convertido chamado Juan Diego.",
+        "Enquanto caminhava em direção à cidade do México para participar da catequese e da Santa Missa, Juan Diego passou pela colina de Tepeyac. Foi ali que ouviu uma voz chamando-o com ternura. Ao subir o monte, encontrou uma Senhora de extraordinária beleza, envolta em luz e revestida de sinais que revelavam sua dignidade celestial.",
+        "Maria apresentou-se como a Mãe do verdadeiro Deus e confiou a Juan Diego uma missão: pedir ao bispo local que fosse construído naquele lugar um templo dedicado a Deus, onde ela pudesse acolher e consolar todos os seus filhos."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "O sinal das rosas",
+      "paragraphs": [
+        "Quando Juan Diego transmitiu o pedido ao bispo Dom Juan de Zumárraga, este pediu um sinal que confirmasse a origem sobrenatural da mensagem.",
+        "Poucos dias depois, enquanto procurava ajuda para seu tio gravemente enfermo, Juan Diego encontrou novamente Nossa Senhora. Com palavras que atravessaram os séculos, ela o consolou: \"Não estou eu aqui, que sou tua Mãe?\"",
+        "Maria pediu então que ele recolhesse flores no alto do monte. Embora fosse inverno e o terreno fosse árido, Juan Diego encontrou belas rosas castelhanas florescendo milagrosamente. Ele as colocou em sua tilma, um manto feito de fibra vegetal, e levou-as ao bispo.",
+        "Ao abrir o manto diante dele, as flores caíram ao chão e, naquele instante, surgiu impressa na tilma a imagem de Nossa Senhora de Guadalupe. Diante daquele prodígio, o bispo acreditou na mensagem e deu início à construção do santuário solicitado pela Virgem."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "A imagem milagrosa",
+      "paragraphs": [
+        "O maior milagre associado a Nossa Senhora de Guadalupe é a própria imagem estampada na tilma de Juan Diego.",
+        "Diversos estudos realizados ao longo dos séculos despertaram o interesse de pesquisadores. O tecido, confeccionado com fibras de cacto, deveria deteriorar-se rapidamente, mas permanece preservado há quase cinco séculos. Além disso, especialistas apontam características incomuns na pintura, cuja origem continua sendo motivo de admiração e reflexão.",
+        "Outro aspecto frequentemente mencionado é a presença de pequenas figuras refletidas nos olhos da imagem, observadas com o auxílio de recursos fotográficos modernos. Esses elementos contribuíram para aumentar ainda mais a devoção dos fiéis à Virgem de Guadalupe.",
+        "Mais importante que os aspectos científicos, porém, é a mensagem espiritual transmitida pela aparição: Deus não abandona seus filhos e envia sua Mãe para conduzi-los ao encontro de Cristo."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Padroeira da América Latina",
+      "paragraphs": [
+        "A devoção a Nossa Senhora de Guadalupe espalhou-se rapidamente pelo continente. Milhões de indígenas abraçaram a fé cristã após as aparições, tornando esse acontecimento um dos episódios mais importantes da evangelização das Américas.",
+        "Em 1945, o Papa Pio XII declarou Nossa Senhora de Guadalupe Padroeira de toda a América. Décadas depois, São João Paulo II reafirmou esse título ao confiar a ela todos os povos da América Latina durante sua visita ao México.",
+        "Até hoje, a Basílica de Guadalupe, na Cidade do México, recebe milhões de peregrinos todos os anos. Ali permanece conservada a tilma de São Juan Diego, testemunho da presença materna de Maria na história do continente."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Uma mensagem que permanece atual",
+      "paragraphs": [
+        "Nossa Senhora de Guadalupe continua lembrando aos cristãos que ninguém está sozinho diante das dificuldades da vida. Sua aparição revela uma Mãe que acolhe os pequenos, consola os aflitos e conduz todos ao amor de Deus.",
+        "Ao olhar para Guadalupe, os fiéis são convidados a renovar sua confiança na providência divina e a recordar as palavras dirigidas a Juan Diego, que permanecem atuais para cada cristão."
+      ],
+      "quote": "Não estou eu aqui, que sou tua Mãe?"
+    }
+  ]
+}

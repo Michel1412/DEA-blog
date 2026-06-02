@@ -18,6 +18,14 @@
       "available": true
     },
     {
+      "slug": "perseveranca",
+      "title": "Ministério Perseverança",
+      "description": "Formar servos gentis e generosos do amor de Deus — aprender e perseverar no serviço.",
+      "path": "/ministerios/perseveranca",
+      "emoji": "✝️",
+      "available": true
+    },
+    {
       "slug": "template",
       "title": "Modelo (Ministérios)",
       "description": "Página de referência aprovada para novos ministérios.",

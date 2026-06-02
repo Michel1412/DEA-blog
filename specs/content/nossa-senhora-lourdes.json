@@ -1,0 +1,49 @@
+{
+  "slug": "nossa-senhora-lourdes",
+  "meta": {
+    "title": "Nossa Senhora de Lourdes | Grupo Deus É Amor",
+    "description": "Aparição de Nossa Senhora a Santa Bernadette Soubirous em 1858, na gruta de Massabielle — conversão, oração e confiança em Deus."
+  },
+  "hero": {
+    "title": "Nossa Senhora de Lourdes",
+    "subtitle": "1858 — Gruta de Massabielle, França",
+    "quote": "Sou a Imaculada Conceição.",
+    "backgroundImage": "/images/nossa-senhora-lourdes.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "Bernadette e a gruta",
+      "variant": "highlight",
+      "paragraphs": [
+        "Nossa Senhora de Lourdes foi uma aparição da Virgem Maria feita à Santa Bernadette Soubirous, em 1858, na França, mais especificamente na gruta de Massabielle na cidade de Lourdes.",
+        "Tudo começou quando Bernadette estava buscando lenha, olhou para a gruta e viu uma senhora vestida de branco com o Rosário em suas mãos. Bernadette rezava ao lado de Nossa Senhora quando ela se fazia presente à Santa, que pedia a ela que fosse à fonte se lavar e rezar pela conversão dos pecadores.",
+        "Bernadette perguntava constantemente quem era essa senhora, mas ela apenas sorria com bondade, até que um dia, com braços e olhos erguidos para o céu, disse: \"Sou a Imaculada Conceição\"."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Dezoito aparições e a fonte milagrosa",
+      "paragraphs": [
+        "Nossa Senhora apareceu 18 vezes nas cercanias de Lourdes. Durante uma das aparições, uma fonte brotou da terra — águas que, desde então, atraem milhões de peregrinos em busca de cura e de graça.",
+        "Essa fonte ainda existe e é considerada uma fonte de águas milagrosas. Lourdes tornou-se um dos maiores santuários marianos do mundo, símbolo da misericórdia de Deus sobre os enfermos e os sofredores."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Mensagem de Lourdes",
+      "paragraphs": [
+        "A principal mensagem que Nossa Senhora nos deixa é um chamado à conversão, oração, penitência e principalmente a confiança em Deus, especialmente no meio do sofrimento.",
+        "Em Lourdes, Maria também recorda o valor dos doentes, dos humildes e da esperança na misericórdia de Deus. A Imaculada Conceição se revela à menina pobre para lembrar que Deus escolhe os pequenos para manifestar sua grandeza."
+      ],
+      "quote": "Confiai em Deus, rezai pela conversão dos pecadores e acolhei os que sofrem — eis o legado de Nossa Senhora de Lourdes."
+    }
+  ]
+}

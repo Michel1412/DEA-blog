@@ -1,0 +1,49 @@
+{
+  "slug": "nossa-senhora-la-salette",
+  "meta": {
+    "title": "Nossa Senhora de La Salette | Grupo Deus É Amor",
+    "description": "Aparição de Nossa Senhora a Maximino e Melanie em 1846, nos Alpes franceses — a Mãe que chora por seus filhos."
+  },
+  "hero": {
+    "title": "Nossa Senhora de La Salette",
+    "subtitle": "19 de setembro de 1846 — Alpes franceses",
+    "quote": "Vinde, meus filhos, não temais.",
+    "backgroundImage": "/images/nossa-senhora-la-salette.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "A aparição em La Salette",
+      "variant": "highlight",
+      "paragraphs": [
+        "Em 19 de setembro de 1846, duas crianças, Maximino e Melanie, que pastoreavam rebanhos na montanha de La Salette, nos Alpes franceses, tiveram a visão de Nossa Senhora.",
+        "Duas crianças veem um globo de luz. Elas percebem que dentro daquele globo de luz há uma bela senhora, sentada sobre uma pedra, com a mão no rosto a chorar, demonstrando profunda tristeza. A luz envolve a figura como um sinal de que o céu se aproxima da terra para falar ao coração da humanidade.",
+        "Quando as crianças se aproximam, ela levanta e diz palavras que ecoam até hoje. Mostra que a realidade da França e do mundo, como estava naquele momento, não agradava ao seu Filho Jesus."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "A mensagem da Mãe que chora",
+      "paragraphs": [
+        "Nossa Senhora expressa sua dor diante do pecado e da indiferença dos homens: \"Se meu povo não quiser aceitar, vejo-me forçada a deixar cair o braço de meu Filho. É tão forte e tão pesado que não posso mais segurar. Há tanto tempo que sofro por vós…\"",
+        "Ela faz um pedido às crianças: o de transmitir essa mensagem a todo o povo. A aparição de La Salette não é apenas um fato do passado — é um chamado permanente à conversão e à responsabilidade cristã."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Uma mãe que chora por seus filhos",
+      "paragraphs": [
+        "Por isso a imagem de Nossa Senhora da Salette é a de uma mãe que chora por seus filhos. Ela não condena com frieza; lamenta, intercede e convida ao retorno.",
+        "A devoção a La Salette nos ensina a olhar para o mundo com os olhos de Maria: com compaixão, com esperança e com o desejo de que todos encontrem o caminho do Filho."
+      ],
+      "quote": "Maria, Mãe que chora por nós, ensina-nos a converter o coração e a anunciar teu Filho ao mundo."
+    }
+  ]
+}
