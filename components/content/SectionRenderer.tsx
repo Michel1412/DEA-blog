@@ -1,5 +1,8 @@
-import Link from 'next/link'
 import { ContentCard } from '@/components/content/ContentCard'
+import { CtaButtonGroup } from '@/components/ui/CtaButtonGroup'
+import { ParagraphList } from '@/components/ui/ParagraphList'
+import { QuoteDisplay } from '@/components/ui/QuoteDisplay'
+import { SectionTitle } from '@/components/ui/SectionTitle'
 import type {
   CardSection,
   ContentSection,
@@ -11,53 +14,37 @@ type SectionRendererProps = {
   section: ContentSection
 }
 
+type SectionBodyProps = {
+  title: string
+  paragraphs: string[]
+  quote?: string
+  quoteVariant?: 'centered' | 'border-left'
+}
+
+function SectionBody({ title, paragraphs, quote, quoteVariant = 'border-left' }: SectionBodyProps) {
+  return (
+    <>
+      <SectionTitle>{title}</SectionTitle>
+      <ParagraphList paragraphs={paragraphs} />
+      {quote && <QuoteDisplay quote={quote} variant={quoteVariant} />}
+    </>
+  )
+}
+
 function ParagraphSectionView({ section }: { section: ParagraphSection }) {
   return (
     <ContentCard variant={section.variant ?? 'default'}>
-      <h2 className="font-serif text-3xl md:text-4xl mb-5 text-[#d4af37]">
-        {section.title}
-      </h2>
-      {section.paragraphs.map((paragraph) => (
-        <p key={paragraph.slice(0, 40)} className="mb-4 leading-relaxed">
-          {paragraph}
-        </p>
-      ))}
-      {section.quote && (
-        <p className="font-serif text-2xl md:text-3xl text-center mt-5 text-[#d4af37]">
-          &ldquo;{section.quote}&rdquo;
-        </p>
-      )}
+      <SectionBody
+        title={section.title}
+        paragraphs={section.paragraphs}
+        quote={section.quote}
+        quoteVariant="centered"
+      />
       {section.cta && (
-        <div className="text-center mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {section.cta.style === 'instagram' ? (
-            <a
-              href={section.cta.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-7 py-3.5 rounded-full text-white font-semibold"
-              style={{
-                background: 'linear-gradient(45deg, #f58529, #dd2a7b, #8134af)',
-              }}
-            >
-              {section.cta.label}
-            </a>
-          ) : (
-            <Link
-              href={section.cta.href}
-              className="inline-block px-7 py-3.5 rounded-full font-semibold border border-[rgba(212,175,55,0.4)] text-[#d4af37] hover:bg-[rgba(212,175,55,0.1)] transition-colors"
-            >
-              {section.cta.label}
-            </Link>
-          )}
-          {section.secondaryCta && (
-            <Link
-              href={section.secondaryCta.href}
-              className="inline-block px-7 py-3.5 rounded-full font-semibold border border-[rgba(212,175,55,0.4)] text-[#d4af37] hover:bg-[rgba(212,175,55,0.1)] transition-colors"
-            >
-              {section.secondaryCta.label}
-            </Link>
-          )}
-        </div>
+        <CtaButtonGroup
+          primary={section.cta}
+          secondary={section.secondaryCta}
+        />
       )}
     </ContentCard>
   )
@@ -66,28 +53,19 @@ function ParagraphSectionView({ section }: { section: ParagraphSection }) {
 function CardSectionView({ section }: { section: CardSection }) {
   return (
     <ContentCard variant={section.variant ?? 'default'}>
-      <h2 className="font-serif text-3xl md:text-4xl mb-5 text-[#d4af37]">
-        {section.title}
-      </h2>
-      {section.paragraphs.map((paragraph) => (
-        <p key={paragraph.slice(0, 40)} className="mb-4 leading-relaxed">
-          {paragraph}
-        </p>
-      ))}
-      {section.quote && (
-        <div className="border-l-4 border-[#d4af37] pl-5 my-5 italic text-[#f0d891]">
-          {section.quote}
-        </div>
-      )}
+      <SectionBody
+        title={section.title}
+        paragraphs={section.paragraphs}
+        quote={section.quote}
+        quoteVariant="border-left"
+      />
     </ContentCard>
   )
 }
 
 function QuoteBlockView({ section }: { section: QuoteBlock }) {
   return (
-    <div
-      className="border-l-4 border-[#d4af37] pl-5 my-8 italic text-[#f0d891] text-lg"
-    >
+    <div className="border-l-4 border-[#d4af37] pl-5 my-8 italic text-[#f0d891] text-lg">
       {section.text}
     </div>
   )

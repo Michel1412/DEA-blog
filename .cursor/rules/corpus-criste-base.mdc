@@ -22,7 +22,7 @@ alwaysApply: true
 
 ## Exceptions
 
-- DEA Ajuda (`/ministerios/dea-ajuda`) uses custom layout — do not refactor to generic template
+- DEA Ajuda e Perseverança (`/ministerios/dea-ajuda`, `/ministerios/perseveranca`) usam `components/ministry-landing/` — não converter para `ContentPageTemplate`
 
 ## Visual identity
 
@@ -36,3 +36,4 @@ alwaysApply: true
 
 - Read `specs/version.json` → field `specFile` for current release notes
 - Versioning policy: `.cursor/rules/corpus-criste-versions.mdc` (each `0.0.x` = one new page)
+- **Engenharia e padrões de código:** [`specs/CORPUS-CRISTE-ENGINEERING.md`](../specs/CORPUS-CRISTE-ENGINEERING.md) — hierarquia de componentes, o que evitar, Server vs Client

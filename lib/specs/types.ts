@@ -119,10 +119,6 @@ export const nossaSenhoraGuadalupeContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
-export const perseverancaContentSchema = contentPageSchema.extend({
-  slug: z.literal('perseveranca'),
-  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
-})
 
 export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
   slug: z.literal('titulos-nossa-senhora-template'),
@@ -188,8 +184,7 @@ export const valueSchema = z.object({
   description: z.string(),
 })
 
-export const deaAjudaContentSchema = z.object({
-  slug: z.literal('dea-ajuda'),
+export const ministryLandingFields = {
   meta: z.object({
     title: z.string(),
     description: z.string(),
@@ -208,12 +203,14 @@ export const deaAjudaContentSchema = z.object({
     paragraphs: z.array(z.string()),
     highlight: z.string().optional(),
   }),
-  video: z.object({
-    title: z.string(),
-    titleHighlight: z.string(),
-    description: z.string(),
-    placeholder: z.string(),
-  }),
+  video: z
+    .object({
+      title: z.string(),
+      titleHighlight: z.string(),
+      description: z.string(),
+      placeholder: z.string(),
+    })
+    .optional(),
   projects: z.object({
     title: z.string(),
     titleHighlight: z.string(),
@@ -235,6 +232,16 @@ export const deaAjudaContentSchema = z.object({
     text: z.string(),
     author: z.string(),
   }),
+}
+
+export const ministryLandingContentSchema = z.object(ministryLandingFields)
+
+export const deaAjudaContentSchema = ministryLandingContentSchema.extend({
+  slug: z.literal('dea-ajuda'),
+})
+
+export const perseverancaContentSchema = ministryLandingContentSchema.extend({
+  slug: z.literal('perseveranca'),
 })
 
 export const checklistItemSchema = z.object({
@@ -277,6 +284,7 @@ export type TitulosNossaSenhoraTemplateContent = z.infer<
 >
 export type MinisteriosTemplateContent = z.infer<typeof ministeriosTemplateContentSchema>
 export type MinisteriosContent = z.infer<typeof ministeriosContentSchema>
+export type MinistryLandingContent = z.infer<typeof ministryLandingContentSchema>
 export type DeaAjudaContent = z.infer<typeof deaAjudaContentSchema>
 export type ChecklistSpec = z.infer<typeof checklistSchema>
 

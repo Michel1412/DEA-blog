@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.1.1",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -93,7 +93,7 @@
     },
     {
       "id": "perseveranca-content",
-      "description": "Página Perseverança apresenta hero com foto do grupo, cards de formação e chamado ao serviço",
+      "description": "Página Perseverança apresenta layout ministry-landing (hero, about, projetos, inspiração, valores, citação; sem vídeo)",
       "category": "content"
     },
     {
@@ -109,6 +109,11 @@
     {
       "id": "guadalupe-content",
       "description": "Página Guadalupe apresenta hero com tilma, aparições a Juan Diego e mensagem da Padroeira da América",
+      "category": "content"
+    },
+    {
+      "id": "engineering-patterns",
+      "description": "Código segue primitivos UI e lib/theme; sem inline styles desnecessários; ver CORPUS-CRISTE-ENGINEERING.md",
       "category": "content"
     }
   ]

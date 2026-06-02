@@ -1,6 +1,7 @@
 import { HeroSection } from '@/components/content/HeroSection'
 import { SectionRenderer } from '@/components/content/SectionRenderer'
 import { PageShell } from '@/components/layout/PageShell'
+import { contentContainer } from '@/lib/theme'
 import type { ContentPage } from '@/lib/specs/types'
 
 type ContentPageTemplateProps = {
@@ -13,7 +14,7 @@ export function ContentPageTemplate({ content, compact = false }: ContentPageTem
     <PageShell>
       <HeroSection hero={content.hero} compact={compact} />
 
-      <div className="max-w-[1100px] w-[92%] mx-auto py-16">
+      <div className={`${contentContainer()} py-16`}>
         {content.sections.map((section) => (
           <SectionRenderer
             key={

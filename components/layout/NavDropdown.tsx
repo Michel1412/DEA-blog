@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { isNavItemActive } from '@/lib/specs/nav'
+import { navLinkClass } from '@/lib/theme'
 import type { NavTreeItem } from '@/lib/specs/nav'
 
 type NavDropdownProps = {
@@ -17,11 +18,7 @@ export function NavDropdown({ item }: NavDropdownProps) {
     return (
       <Link
         href={item.path}
-        className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-          isActive
-            ? 'bg-[rgba(212,175,55,0.15)] text-[#d4af37]'
-            : 'text-foreground/90 hover:text-[#d4af37]'
-        }`}
+        className={navLinkClass(isActive, 'desktop')}
         data-testid={`nav-link-${item.path === '/' ? 'home' : item.path.slice(1).replace(/\//g, '-')}`}
       >
         {item.label}
@@ -33,11 +30,7 @@ export function NavDropdown({ item }: NavDropdownProps) {
     <div className="relative group" data-testid={`nav-dropdown-${item.path.slice(1)}`}>
       <Link
         href={item.path}
-        className={`inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-          isActive
-            ? 'bg-[rgba(212,175,55,0.15)] text-[#d4af37]'
-            : 'text-foreground/90 hover:text-[#d4af37]'
-        }`}
+        className={`inline-flex items-center gap-1 ${navLinkClass(isActive, 'desktop')}`}
       >
         {item.label}
         <span className="text-xs opacity-70" aria-hidden="true">

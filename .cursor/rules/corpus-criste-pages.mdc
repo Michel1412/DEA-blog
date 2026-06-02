@@ -10,7 +10,7 @@ alwaysApply: false
 
 | Page | Template | JSON |
 |------|----------|------|
-| Home | ContentPageTemplate (hero com carrossel opcional; sem menção a ministérios) | home.json |
+| Home | ContentPageTemplate (hero com carrossel CSS opcional; sem menção a ministérios) | home.json |
 | Títulos de Nossa Senhora (index) | ListingPageTemplate | titulos-nossa-senhora.json |
 | Nossa Senhora Auxiliadora | ContentPageTemplate compact | nossa-senhora-auxiliadora.json |
 | Nossa Senhora em Medjugorje | ContentPageTemplate compact | nossa-senhora-medjugorje.json |
@@ -20,8 +20,8 @@ alwaysApply: false
 | Nossa Senhora de Guadalupe | ContentPageTemplate compact | nossa-senhora-guadalupe.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
-| Ministério Perseverança | ContentPageTemplate compact | perseveranca.json |
-| DEA Ajuda | Custom (do not copy) | dea-ajuda.json |
+| Ministério Perseverança | Ministry landing (7 seções) | perseveranca.json |
+| DEA Ajuda | Ministry landing (7 seções) | dea-ajuda.json |
 | **Ministérios template** | ContentPageTemplate compact | ministerios-template.json |
 
 ## Minimal page.tsx (copy exactly)

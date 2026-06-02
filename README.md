@@ -32,7 +32,7 @@ Novas páginas devem copiar:
 - Page: `app/titulos-nossa-senhora/template/page.tsx` ou `app/ministerios/template/page.tsx`
 - Componentes: `ContentPageTemplate`, `ListingPageTemplate`, `PageShell`
 
-Consulte `specs/spec-0.0.5.md` (versão atual), `specs/spec-0.0.4.md`, `specs/spec-0.0.3.md` e specs anteriores (baseline em `spec-0.0.0.md`).
+Consulte `specs/spec-0.1.0.md` (versão atual), `specs/spec-0.0.5.md` e releases `0.0.x` (baseline em `spec-0.0.0.md`). Padrões de código: [`specs/CORPUS-CRISTE-ENGINEERING.md`](specs/CORPUS-CRISTE-ENGINEERING.md).
 
 ## Versionamento
 
@@ -46,6 +46,7 @@ Por padrão, cada versão `0.0.x` adiciona uma nova página; um release pode agr
 | 0.0.3 | Perseverança, La Salette e Lourdes |
 | 0.0.4 | Nossa Senhora de Guadalupe |
 | 0.0.5 | Home (vitrine do grupo) + rodapé |
+| 0.1.0 | Revisão técnica (componentes, tokens, performance) |
 
 ## Estrutura de specs
 
@@ -57,7 +58,9 @@ specs/
 ├── spec-0.0.2.md
 ├── spec-0.0.3.md
 ├── spec-0.0.4.md
-├── spec-0.0.5.md         # release notes da versão atual
+├── spec-0.0.5.md
+├── spec-0.1.0.md         # release notes da versão atual
+├── CORPUS-CRISTE-ENGINEERING.md  # guia para agentes (padrões de código)
 ├── routes.json           # rotas da navbar (parent = dropdown)
 ├── content/              # textos e dados das páginas
 └── tests/

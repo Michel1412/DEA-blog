@@ -26,6 +26,7 @@ alwaysApply: false
 | 0.0.3 | Nossa Senhora de Lourdes | `/titulos-nossa-senhora/nossa-senhora-lourdes` |
 | 0.0.4 | Nossa Senhora de Guadalupe | `/titulos-nossa-senhora/nossa-senhora-guadalupe` |
 | 0.0.5 | Revisão Home + rodapé (UX/código, sem nova rota) | `/` |
+| 0.1.0 | Revisão técnica (componentização, tokens, docs) | — |
 
 ## Checklist obrigatório por versão
 

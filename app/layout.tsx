@@ -19,9 +19,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Grupo Deus É Amor | Nossa Senhora Auxiliadora',
+  title: 'Grupo Deus É Amor | Jovens evangelizando Jovens',
   description:
-    'Evangelizando jovens desde o ano 2000. Grupo Deus É Amor — oração, fraternidade e formação cristã.',
+    'Grupo Deus É Amor — jovens evangelizando jovens desde 2000. Oração, fraternidade e formação cristã em Maringá.',
   icons: {
     icon: '/logo-deus-e-amor.png',
     apple: '/logo-deus-e-amor.png',

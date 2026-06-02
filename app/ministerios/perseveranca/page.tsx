@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
-import { ContentPageTemplate } from '@/components/content/ContentPageTemplate'
+import { MinistryLandingAbout } from '@/components/ministry-landing/MinistryLandingAbout'
+import { MinistryLandingHero } from '@/components/ministry-landing/MinistryLandingHero'
+import { MinistryLandingInspiration } from '@/components/ministry-landing/MinistryLandingInspiration'
+import { MinistryLandingProjects } from '@/components/ministry-landing/MinistryLandingProjects'
+import { MinistryLandingQuote } from '@/components/ministry-landing/MinistryLandingQuote'
+import { MinistryLandingValues } from '@/components/ministry-landing/MinistryLandingValues'
 import { loadContent } from '@/lib/specs/loader'
 
 const content = loadContent('perseveranca')
@@ -10,5 +15,16 @@ export const metadata: Metadata = {
 }
 
 export default function PerseverancaPage() {
-  return <ContentPageTemplate content={content} compact />
+  const { hero, about, projects, inspiration, values, quote } = content
+
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <MinistryLandingHero hero={hero} />
+      <MinistryLandingAbout about={about} />
+      <MinistryLandingProjects projects={projects} />
+      <MinistryLandingInspiration inspiration={inspiration} />
+      <MinistryLandingValues values={values} />
+      <MinistryLandingQuote quote={quote} />
+    </main>
+  )
 }

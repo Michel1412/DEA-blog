@@ -1,14 +1,10 @@
-import Link from 'next/link'
 import { PageShell } from '@/components/layout/PageShell'
+import { BackgroundImageLayer } from '@/components/ui/BackgroundImageLayer'
+import { GradientOverlay } from '@/components/ui/GradientOverlay'
+import { ListingCard, type ListingCardProps } from '@/components/ui/ListingCard'
+import { contentContainer, listingGradientClass, listingHeroOverlay } from '@/lib/theme'
 
-export type ListingItem = {
-  slug: string
-  title: string
-  description: string
-  path: string
-  emoji?: string
-  available?: boolean
-}
+export type ListingItem = ListingCardProps
 
 type ListingHero = {
   title: string
@@ -24,11 +20,6 @@ type ListingPageTemplateProps = {
   availableLabel?: string
 }
 
-const gradientStyles = {
-  gold: 'bg-gradient-to-b from-[rgba(212,175,55,0.12)] to-[#0f0f12]',
-  wine: 'bg-gradient-to-b from-[rgba(124,31,42,0.25)] to-[#0f0f12]',
-}
-
 export function ListingPageTemplate({
   hero,
   items,
@@ -36,21 +27,20 @@ export function ListingPageTemplate({
   testIdPrefix = 'listing',
   availableLabel = 'Ver mais →',
 }: ListingPageTemplateProps) {
-  const heroStyle = hero.backgroundImage
-    ? {
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)), url('${hero.backgroundImage}')`,
-        backgroundSize: 'cover' as const,
-        backgroundPosition: 'center' as const,
-      }
-    : undefined
-
   return (
     <PageShell>
       <section
-        className={`min-h-[50vh] flex justify-center items-center p-8 pt-28 text-center ${hero.backgroundImage ? 'bg-cover bg-center relative' : gradientStyles[gradient]}`}
-        style={heroStyle}
+        className={`min-h-[50vh] flex justify-center items-center p-8 pt-28 text-center relative isolate overflow-hidden ${
+          hero.backgroundImage ? '' : listingGradientClass(gradient)
+        }`}
       >
-        <div className="max-w-[800px]">
+        {hero.backgroundImage && (
+          <>
+            <BackgroundImageLayer src={hero.backgroundImage} />
+            <GradientOverlay overlay={listingHeroOverlay} />
+          </>
+        )}
+        <div className="relative z-10 max-w-[800px]">
           <h1 className="font-serif text-5xl md:text-6xl text-[#d4af37] mb-4">
             {hero.title}
           </h1>
@@ -60,57 +50,16 @@ export function ListingPageTemplate({
         </div>
       </section>
 
-      <div className="max-w-[1100px] w-[92%] mx-auto py-16">
+      <div className={`${contentContainer()} py-16`}>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {items.map((item) => {
-            const cardContent = (
-              <>
-                {item.emoji && (
-                  <div className="text-4xl mb-4">{item.emoji}</div>
-                )}
-                <h2 className="font-serif text-2xl text-[#d4af37] mb-3">
-                  {item.title}
-                </h2>
-                <p className="leading-relaxed text-foreground/85 mb-4">
-                  {item.description}
-                </p>
-                {item.available !== false ? (
-                  <span className="inline-block text-sm font-semibold text-[#d4af37]">
-                    {availableLabel}
-                  </span>
-                ) : (
-                  <span className="inline-block text-sm text-muted-foreground">
-                    Em breve
-                  </span>
-                )}
-              </>
-            )
-
-            const cardClass =
-              'block p-8 rounded-2xl border border-[rgba(212,175,55,0.15)] bg-[#1b1b20] transition-all hover:border-[rgba(212,175,55,0.4)] hover:shadow-lg'
-
-            if (item.available !== false) {
-              return (
-                <Link
-                  key={item.slug}
-                  href={item.path}
-                  className={`${cardClass} hover:scale-[1.02]`}
-                  data-testid={`${testIdPrefix}-${item.slug}`}
-                >
-                  {cardContent}
-                </Link>
-              )
-            }
-
-            return (
-              <div
-                key={item.slug}
-                className={`${cardClass} opacity-60 cursor-not-allowed`}
-              >
-                {cardContent}
-              </div>
-            )
-          })}
+          {items.map((item) => (
+            <ListingCard
+              key={item.slug}
+              {...item}
+              availableLabel={availableLabel}
+              testIdPrefix={testIdPrefix}
+            />
+          ))}
         </div>
       </div>
     </PageShell>

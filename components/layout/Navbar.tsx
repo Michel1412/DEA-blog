@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { NavDropdown } from '@/components/layout/NavDropdown'
 import { buildNavTree, isNavItemActive } from '@/lib/specs/nav'
+import { goldText, navDropdownParentClass, navLinkClass } from '@/lib/theme'
 import type { RoutesSpec } from '@/lib/specs/types'
 
 type NavbarProps = {
@@ -28,7 +29,7 @@ export function Navbar({ routes }: NavbarProps) {
             height={44}
             className="rounded-full bg-white p-1 object-contain"
           />
-          <span className="hidden sm:block font-serif text-lg text-[#d4af37]">
+          <span className={`hidden sm:block font-serif text-lg ${goldText()}`}>
             Deus É Amor
           </span>
         </Link>
@@ -45,7 +46,7 @@ export function Navbar({ routes }: NavbarProps) {
 
         <button
           type="button"
-          className="md:hidden rounded-lg border border-[rgba(212,175,55,0.3)] px-3 py-2 text-sm text-[#d4af37]"
+          className={`md:hidden rounded-lg border border-[rgba(212,175,55,0.3)] px-3 py-2 text-sm ${goldText()}`}
           aria-expanded={mobileOpen}
           aria-controls="mobile-nav"
           data-testid="nav-mobile-toggle"
@@ -71,11 +72,7 @@ export function Navbar({ routes }: NavbarProps) {
                   <Link
                     key={item.path}
                     href={item.path}
-                    className={`block rounded-lg px-4 py-2.5 text-sm font-medium ${
-                      isActive
-                        ? 'bg-[rgba(212,175,55,0.15)] text-[#d4af37]'
-                        : 'text-foreground/90'
-                    }`}
+                    className={navLinkClass(isActive, 'mobile-top')}
                     onClick={() => setMobileOpen(false)}
                     data-testid={`nav-mobile-link-${item.path === '/' ? 'home' : item.path.slice(1)}`}
                   >
@@ -88,11 +85,7 @@ export function Navbar({ routes }: NavbarProps) {
                 <div key={item.path} className="space-y-1">
                   <Link
                     href={item.path}
-                    className={`block rounded-lg px-4 py-2.5 text-sm font-semibold ${
-                      isActive
-                        ? 'bg-[rgba(212,175,55,0.15)] text-[#d4af37]'
-                        : 'text-[#d4af37]'
-                    }`}
+                    className={navDropdownParentClass(isActive)}
                     onClick={() => setMobileOpen(false)}
                     data-testid={`nav-mobile-link-${item.path.slice(1)}`}
                   >
@@ -102,11 +95,7 @@ export function Navbar({ routes }: NavbarProps) {
                     <Link
                       key={child.path}
                       href={child.path}
-                      className={`block rounded-lg px-6 py-2 text-sm ${
-                        pathname === child.path
-                          ? 'bg-[rgba(212,175,55,0.12)] text-[#d4af37]'
-                          : 'text-foreground/85'
-                      }`}
+                      className={navLinkClass(pathname === child.path, 'mobile-child')}
                       onClick={() => setMobileOpen(false)}
                       data-testid={`nav-mobile-link-${child.path.slice(1).replace(/\//g, '-')}`}
                     >

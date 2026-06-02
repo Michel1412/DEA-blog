@@ -5,52 +5,87 @@
     "description": "Formar servos gentis e generosos do amor de Deus — aprender e perseverar no caminho de servir."
   },
   "hero": {
-    "title": "Ministério Perseverança",
+    "title": "Perseverança",
+    "highlight": "Ministério",
     "subtitle": "Formar servos gentis e generosos do amor de Deus",
-    "quote": "Perseverar no caminho de servir a Deus, com mansidão e generosidade.",
+    "tagline": "Perseverar no caminho de servir a Deus, com mansidão e generosidade.",
     "backgroundImage": "/images/ministerio-perseveranca.png",
-    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
-    "logo": {
-      "src": "/logo-deus-e-amor.png",
-      "alt": "Grupo Deus É Amor",
-      "width": 140,
-      "height": 140
-    }
+    "ctaLabel": "Conheça nossa formação",
+    "ctaHref": "#about"
   },
-  "sections": [
-    {
-      "type": "card",
-      "title": "O Ministério Perseverança",
-      "variant": "highlight",
-      "paragraphs": [
-        "O Ministério Perseverança reúne um grupo de novos servos dedicados a aprender e perseverar no caminho de servir a Deus. Aqui, quem está começando ou deseja aprofundar sua vocação ao serviço encontra formação, acolhimento e companheirismo.",
-        "O maior objetivo do ministério é formar servos gentis e generosos do amor de Deus — pessoas que servem com o coração, com paciência e com alegria, refletindo o rosto de Cristo nas pequenas e grandes tarefas da comunidade."
-      ]
-    },
-    {
-      "type": "card",
-      "title": "Nosso grupo de servos",
-      "variant": "highlight",
-      "paragraphs": [
-        "Na foto que ilumina esta página, vemos jovens reunidos sob um telhado simples, sorrindo e acolhendo uns aos outros — expressão viva da fraternidade que o ministério busca cultivar. Homens e mulheres de diferentes perfis, unidos pelo mesmo desejo: crescer no serviço e permanecer fiéis à vocação recebida.",
-        "Essa imagem representa o espírito do Perseverança: comunidade, alegria e compromisso com a formação. Cada rosto lembra que servir a Deus é caminhar junto, aprendendo dia após dia a ser instrumento do seu amor."
-      ]
-    },
-    {
-      "type": "card",
-      "title": "Caminho do servir",
-      "paragraphs": [
-        "Perseverar não é apenas continuar — é crescer na entrega, mesmo quando o caminho exige paciência e renúncia. O ministério oferece momentos de oração, formação e serviço prático para que cada servo descubra seus dons e os coloque a favor do Reino.",
-        "A dedicação aos irmãos, à liturgia, à evangelização e às necessidades da comunidade faz parte desse aprendizado constante. Queremos que cada servo saiba que seu sim a Deus transforma vidas."
-      ]
-    },
-    {
-      "type": "card",
-      "title": "Chamado",
-      "paragraphs": [
-        "Se você sente o desejo de servir com mais profundidade, de aprender e de permanecer fiel, o Ministério Perseverança pode ser o seu lugar de caminhada."
-      ],
-      "quote": "Servir com amor, perseverar com fé, ser gentil e generoso como Deus nos chama a ser."
-    }
-  ]
+  "about": {
+    "title": "Ministério Perseverança",
+    "paragraphs": [
+      "O Ministério Perseverança reúne um grupo de novos servos dedicados a aprender e perseverar no caminho de servir a Deus. Aqui, quem está começando ou deseja aprofundar sua vocação ao serviço encontra formação, acolhimento e companheirismo.",
+      "O maior objetivo do ministério é formar servos gentis e generosos do amor de Deus — pessoas que servem com o coração, com paciência e com alegria, refletindo o rosto de Cristo nas pequenas e grandes tarefas da comunidade."
+    ],
+    "highlight": "Formar servos que servem com o coração, com paciência e com alegria, refletindo o rosto de Cristo na comunidade."
+  },
+  "projects": {
+    "title": "Caminhos de",
+    "titleHighlight": "formação",
+    "description": "Eixos que orientam o aprendizado e a perseverança de cada servo",
+    "items": [
+      {
+        "emoji": "📖",
+        "title": "Formação e oração",
+        "description": "Momentos de oração e formação para que cada servo descubra seus dons e os coloque a favor do Reino."
+      },
+      {
+        "emoji": "🤝",
+        "title": "Comunidade fraterna",
+        "description": "Caminhar junto, aprendendo dia após dia a ser instrumento do amor de Deus — comunidade, alegria e compromisso com a formação."
+      },
+      {
+        "emoji": "⛪",
+        "title": "Serviço na comunidade",
+        "description": "Dedicação aos irmãos, à liturgia, à evangelização e às necessidades da comunidade como aprendizado constante."
+      },
+      {
+        "emoji": "✝️",
+        "title": "Perseverança na vocação",
+        "description": "Perseverar não é apenas continuar — é crescer na entrega, mesmo quando o caminho exige paciência e renúncia."
+      }
+    ]
+  },
+  "inspiration": {
+    "title": "Nosso",
+    "titleHighlight": "grupo de servos",
+    "backgroundImage": "/images/ministerio-perseveranca.png",
+    "paragraphs": [
+      "Na foto que ilumina esta página, vemos jovens reunidos sob um telhado simples, sorrindo e acolhendo uns aos outros — expressão viva da fraternidade que o ministério busca cultivar.",
+      "Homens e mulheres de diferentes perfis, unidos pelo mesmo desejo: crescer no serviço e permanecer fiéis à vocação recebida.",
+      "Essa imagem representa o espírito do Perseverança: comunidade, alegria e compromisso com a formação. Cada rosto lembra que servir a Deus é caminhar junto."
+    ]
+  },
+  "values": {
+    "title": "Nossos",
+    "titleHighlight": "Valores",
+    "items": [
+      {
+        "icon": "heart",
+        "title": "Gentileza",
+        "description": "Servir com mansidão e o coração aberto."
+      },
+      {
+        "icon": "smile",
+        "title": "Generosidade",
+        "description": "Refletir o amor generoso de Deus."
+      },
+      {
+        "icon": "cross",
+        "title": "Perseverança",
+        "description": "Permanecer fiéis à vocação recebida."
+      },
+      {
+        "icon": "users",
+        "title": "Serviço",
+        "description": "Ser instrumento do amor na comunidade."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Servir com amor, perseverar com fé, ser gentil e generoso como Deus nos chama a ser.",
+    "author": "Ministério Perseverança"
+  }
 }
