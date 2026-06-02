@@ -10,7 +10,7 @@ alwaysApply: false
 
 | Page | Template | JSON |
 |------|----------|------|
-| Home | ContentPageTemplate | home.json |
+| Home | ContentPageTemplate (hero com carrossel opcional; sem menção a ministérios) | home.json |
 | Títulos de Nossa Senhora (index) | ListingPageTemplate | titulos-nossa-senhora.json |
 | Nossa Senhora Auxiliadora | ContentPageTemplate compact | nossa-senhora-auxiliadora.json |
 | Nossa Senhora em Medjugorje | ContentPageTemplate compact | nossa-senhora-medjugorje.json |

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { HeroBackgroundCarousel } from '@/components/content/HeroBackgroundCarousel'
 import type { heroSchema } from '@/lib/specs/types'
 import type { z } from 'zod'
 
@@ -12,15 +13,28 @@ type HeroSectionProps = {
 export function HeroSection({ hero, compact = false }: HeroSectionProps) {
   const overlay = hero.overlay ?? 'linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))'
   const minHeight = compact ? 'min-h-[60vh]' : 'min-h-screen'
+  const carouselImages =
+    hero.backgroundImages && hero.backgroundImages.length > 1
+      ? hero.backgroundImages
+      : null
 
   return (
     <section
-      className={`${minHeight} flex justify-center items-center p-8 pt-24 text-center bg-cover bg-center relative`}
-      style={{
-        backgroundImage: `${overlay}, url('${hero.backgroundImage}')`,
-      }}
+      className={`${minHeight} flex justify-center items-center p-8 pt-24 text-center relative isolate overflow-hidden`}
+      style={
+        carouselImages
+          ? undefined
+          : {
+              backgroundImage: `${overlay}, url('${hero.backgroundImage}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }
+      }
     >
-      <div className="max-w-[900px]">
+      {carouselImages && (
+        <HeroBackgroundCarousel images={carouselImages} overlay={overlay} />
+      )}
+      <div className="relative z-10 max-w-[900px] w-full">
         {hero.logo && (
           <Image
             src={hero.logo.src}

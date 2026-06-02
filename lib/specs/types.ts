@@ -30,6 +30,12 @@ export const paragraphSectionSchema = z.object({
       style: z.enum(['instagram', 'primary', 'link']).optional(),
     })
     .optional(),
+  secondaryCta: z
+    .object({
+      label: z.string(),
+      href: z.string(),
+    })
+    .optional(),
 })
 
 export const quoteBlockSchema = z.object({
@@ -50,6 +56,7 @@ export const heroSchema = z.object({
   subtitle: z.string().optional(),
   quote: z.string().optional(),
   backgroundImage: z.string(),
+  backgroundImages: z.array(z.string()).min(1).optional(),
   overlay: z.string().optional(),
   logo: z
     .object({

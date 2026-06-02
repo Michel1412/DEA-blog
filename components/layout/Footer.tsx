@@ -21,12 +21,14 @@ export function Footer() {
         <Cross className="w-5 h-5 text-[#d4af37] hidden sm:block" aria-hidden="true" />
         <p className="text-lg font-semibold">Grupo Deus É Amor</p>
       </div>
-      <p className="text-base mb-2 text-foreground/90">Ministério DEA Ajuda</p>
-      <p className="leading-relaxed text-foreground/80">
-        Evangelização • Ações Sociais • Casas de Acolhida • Caridade
+      <p className="text-base mb-2 text-foreground/90" data-testid="footer-easter-egg">
+        Ministério DEA Programadores
+      </p>
+      <p className="leading-relaxed text-foreground/80" data-testid="footer-pillars">
+        Evangelização • Amizade • Compromisso • Serviço
       </p>
       <p className="opacity-80 text-sm mt-4" data-testid="footer-copyright">
-        © 2026 Ministério DEA Ajuda. Todos os direitos reservados.
+        © 2026 Grupo Deus É Amor. Todos os direitos reservados.
       </p>
     </footer>
   )

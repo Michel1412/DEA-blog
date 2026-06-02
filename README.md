@@ -32,7 +32,7 @@ Novas páginas devem copiar:
 - Page: `app/titulos-nossa-senhora/template/page.tsx` ou `app/ministerios/template/page.tsx`
 - Componentes: `ContentPageTemplate`, `ListingPageTemplate`, `PageShell`
 
-Consulte `specs/spec-0.0.4.md` (versão atual), `specs/spec-0.0.3.md`, `specs/spec-0.0.2.md`, `specs/spec-0.0.1.md` e `specs/spec-0.0.0.md` (baseline).
+Consulte `specs/spec-0.0.5.md` (versão atual), `specs/spec-0.0.4.md`, `specs/spec-0.0.3.md` e specs anteriores (baseline em `spec-0.0.0.md`).
 
 ## Versionamento
 
@@ -45,6 +45,7 @@ Por padrão, cada versão `0.0.x` adiciona uma nova página; um release pode agr
 | 0.0.2 | Nossa Senhora Aparecida |
 | 0.0.3 | Perseverança, La Salette e Lourdes |
 | 0.0.4 | Nossa Senhora de Guadalupe |
+| 0.0.5 | Home (vitrine do grupo) + rodapé |
 
 ## Estrutura de specs
 
@@ -55,7 +56,8 @@ specs/
 ├── spec-0.0.1.md         # release notes v0.0.1
 ├── spec-0.0.2.md
 ├── spec-0.0.3.md
-├── spec-0.0.4.md         # release notes da versão atual
+├── spec-0.0.4.md
+├── spec-0.0.5.md         # release notes da versão atual
 ├── routes.json           # rotas da navbar (parent = dropdown)
 ├── content/              # textos e dados das páginas
 └── tests/
@@ -111,4 +113,4 @@ O arquivo [`vercel.json`](vercel.json) inclui redirects de URLs legadas (`/image
 
 ## Licença
 
-© 2026 Ministério DEA Ajuda. Todos os direitos reservados.
+© 2026 Grupo Deus É Amor. Todos os direitos reservados.

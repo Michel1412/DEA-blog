@@ -1,14 +1,20 @@
 {
   "slug": "home",
   "meta": {
-    "title": "Grupo Deus É Amor | Nossa Senhora Auxiliadora",
-    "description": "Evangelizando jovens desde o ano 2000. Grupo Deus É Amor — oração, fraternidade e formação cristã."
+    "title": "Grupo Deus É Amor | Jovens evangelizando Jovens",
+    "description": "Grupo Deus É Amor — jovens evangelizando jovens desde 2000. Oração, fraternidade e formação cristã em Maringá."
   },
   "hero": {
-    "title": "Nossa Senhora Auxiliadora",
-    "subtitle": "Celebrada em 24 de Maio • Auxiliadora dos Cristãos",
-    "quote": "Maria, Auxiliadora dos Cristãos, rogai por nós.",
-    "backgroundImage": "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1600&q=80",
+    "title": "Grupo Deus É Amor",
+    "subtitle": "Jovens evangelizando Jovens desde 2000",
+    "quote": "Aquele que não ama não conhece a Deus, porque Deus é amor. (1 João 4:8)",
+    "backgroundImage": "/images/home-carousel-01.png",
+    "backgroundImages": [
+      "/images/home-carousel-01.png",
+      "/images/home-carousel-02.png",
+      "/images/home-carousel-03.png",
+      "/images/home-carousel-04.png"
+    ],
     "overlay": "linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82))",
     "logo": {
       "src": "/logo-deus-e-amor.png",
@@ -24,26 +30,28 @@
       "variant": "highlight",
       "paragraphs": [
         "Evangelizando jovens desde o ano 2000, o Grupo Deus É Amor nasceu com a missão de aproximar corações de Cristo através da oração, da fraternidade, da adoração e do encontro pessoal com Deus.",
-        "Todas as quintas-feiras às 19h15, jovens e famílias se reúnem para viver momentos de espiritualidade, pregação, louvor e formação cristã.",
+        "Todas as quintas-feiras às 19h30, jovens e famílias se reúnem para viver momentos de espiritualidade, pregação, louvor e formação cristã.",
         "Inspirados pelo amor de Deus e pela intercessão da Virgem Maria, buscamos construir uma juventude firme na fé e comprometida com o Evangelho."
       ]
     },
     {
       "type": "paragraphs",
-      "title": "DEA Ajuda — Evangelizar através da Caridade",
+      "title": "Venha participar",
       "variant": "highlight",
       "paragraphs": [
-        "Inspirado pelos valores cristãos vividos pelo Grupo Deus É Amor e pela devoção a Nossa Senhora Auxiliadora, o Ministério DEA Ajuda busca transformar fé em ação.",
-        "O ministério atua por meio de ações sociais, campanhas solidárias, arrecadações e projetos voltados para comunidades e casas de acolhida.",
-        "Nossa missão é levar ajuda de forma concreta aos que mais precisam, oferecendo apoio material, acolhimento humano e a presença amorosa do Evangelho.",
-        "Acreditamos que servir também é evangelizar.",
-        "Por isso buscamos ajudar com amor, alegria e generosidade, tornando Cristo presente através da caridade, do cuidado e da fraternidade."
+        "Se você ainda não conhece o Grupo Deus É Amor, venha viver conosco um encontro de fé, amizade e comunhão. Há sempre lugar para mais um jovem que deseja crescer na caminhada com Cristo.",
+        "Nossas reuniões acontecem todas as quintas-feiras, às 19h30, no Auditório Dona Guilhermina, ao lado do Centro Catequético da Catedral de Maringá.",
+        "Será um prazer acolher você e compartilhar juntos a alegria do Evangelho."
       ],
       "quote": "Amar, acolher e servir: eis o caminho do Evangelho.",
       "cta": {
         "label": "Acompanhe o Grupo Deus É Amor",
         "href": "https://www.instagram.com/grupodeuseamor/",
         "style": "instagram"
+      },
+      "secondaryCta": {
+        "label": "Títulos de Nossa Senhora",
+        "href": "/titulos-nossa-senhora"
       }
     }
   ]

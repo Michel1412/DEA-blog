@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -63,12 +63,17 @@
     },
     {
       "id": "footer-copyright",
-      "description": "Rodapé exibe copyright 2026",
+      "description": "Rodapé exibe copyright 2026 em nome do Grupo Deus É Amor",
       "category": "footer"
     },
     {
       "id": "home-content",
-      "description": "Home apresenta hero, Grupo DEA e trecho DEA Ajuda com botão Instagram",
+      "description": "Home apresenta hero do Grupo DEA, carrossel de fotos e convite com botão Instagram",
+      "category": "content"
+    },
+    {
+      "id": "home-grupo-vitrine",
+      "description": "Home não cita ministérios; hero Grupo Deus É Amor; convite quintas 19h30; link Títulos de Nossa Senhora",
       "category": "content"
     },
     {

@@ -29,7 +29,7 @@ function ParagraphSectionView({ section }: { section: ParagraphSection }) {
       )}
       {section.cta && (
         <div className="text-center mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          {section.cta.style === 'instagram' && (
+          {section.cta.style === 'instagram' ? (
             <a
               href={section.cta.href}
               target="_blank"
@@ -41,13 +41,22 @@ function ParagraphSectionView({ section }: { section: ParagraphSection }) {
             >
               {section.cta.label}
             </a>
+          ) : (
+            <Link
+              href={section.cta.href}
+              className="inline-block px-7 py-3.5 rounded-full font-semibold border border-[rgba(212,175,55,0.4)] text-[#d4af37] hover:bg-[rgba(212,175,55,0.1)] transition-colors"
+            >
+              {section.cta.label}
+            </Link>
           )}
-          <Link
-            href="/ministerios/dea-ajuda"
-            className="inline-block px-7 py-3.5 rounded-full font-semibold border border-[rgba(212,175,55,0.4)] text-[#d4af37] hover:bg-[rgba(212,175,55,0.1)] transition-colors"
-          >
-            Conheça o DEA Ajuda
-          </Link>
+          {section.secondaryCta && (
+            <Link
+              href={section.secondaryCta.href}
+              className="inline-block px-7 py-3.5 rounded-full font-semibold border border-[rgba(212,175,55,0.4)] text-[#d4af37] hover:bg-[rgba(212,175,55,0.1)] transition-colors"
+            >
+              {section.secondaryCta.label}
+            </Link>
+          )}
         </div>
       )}
     </ContentCard>

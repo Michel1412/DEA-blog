@@ -25,6 +25,7 @@ alwaysApply: false
 | 0.0.3 | Nossa Senhora de La Salette | `/titulos-nossa-senhora/nossa-senhora-la-salette` |
 | 0.0.3 | Nossa Senhora de Lourdes | `/titulos-nossa-senhora/nossa-senhora-lourdes` |
 | 0.0.4 | Nossa Senhora de Guadalupe | `/titulos-nossa-senhora/nossa-senhora-guadalupe` |
+| 0.0.5 | Revisão Home + rodapé (UX/código, sem nova rota) | `/` |
 
 ## Checklist obrigatório por versão
 
