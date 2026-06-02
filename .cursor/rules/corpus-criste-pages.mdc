@@ -21,6 +21,7 @@ alwaysApply: false
 | Nossa Senhora das Graças | ContentPageTemplate compact | nossa-senhora-das-gracas.json |
 | Nossa Senhora da Comunicação | ContentPageTemplate compact | nossa-senhora-da-comunicacao.json |
 | Nossa Senhora das Dores | ContentPageTemplate compact | nossa-senhora-das-dores.json |
+| Nossa Senhora de Fátima | ContentPageTemplate compact | nossa-senhora-de-fatima.json |
 | **Títulos template** | ContentPageTemplate compact | titulos-nossa-senhora-template.json |
 | Ministérios (index) | ListingPageTemplate | ministerios.json |
 | Ministério Perseverança | Ministry landing (7 seções) | perseveranca.json |

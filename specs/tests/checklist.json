@@ -1,5 +1,5 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -130,6 +130,11 @@
       "id": "dea-ajuda-hero-carousel",
       "description": "Página DEA Ajuda usa carrossel de fundo no hero (backgroundImages) no padrão do projeto",
       "category": "visual"
+    },
+    {
+      "id": "nossa-senhora-de-fatima-content",
+      "description": "Página Nossa Senhora de Fátima apresenta hero, Milagre do Sol, pastorinhos, ensinamentos e contexto histórico de 1917",
+      "category": "content"
     },
     {
       "id": "footer-pillars-humildade",

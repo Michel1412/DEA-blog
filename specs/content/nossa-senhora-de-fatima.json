@@ -1,0 +1,61 @@
+{
+  "slug": "nossa-senhora-de-fatima",
+  "meta": {
+    "title": "Nossa Senhora de Fátima | Grupo Deus É Amor",
+    "description": "Fátima (1917) — mensagem de paz, oração e conversão; Milagre do Sol e o convite ao rosário."
+  },
+  "hero": {
+    "title": "Nossa Senhora de Fátima",
+    "subtitle": "Mensagem de paz, oração e conversão",
+    "quote": "Uma mensagem de amor, paz e esperança.",
+    "backgroundImage": "/images/nossa-senhora-de-fatima.png",
+    "overlay": "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88))",
+    "logo": {
+      "src": "/logo-deus-e-amor.png",
+      "alt": "Grupo Deus É Amor",
+      "width": 140,
+      "height": 140
+    }
+  },
+  "sections": [
+    {
+      "type": "card",
+      "title": "O Milagre do Sol (13 de outubro de 1917)",
+      "variant": "highlight",
+      "paragraphs": [
+        "O Milagre do Sol aconteceu em 13 de outubro de 1917, em Fátima, durante as aparições de Nossa Senhora de Fátima.",
+        "Milhares de pessoas estavam reunidas no local quando, após uma forte chuva, muitos afirmaram ver o Sol girar, mudar de cor e parecer se mover no céu.",
+        "O acontecimento foi interpretado pelos católicos como um sinal divino confirmando as mensagens de Nossa Senhora aos três pastorinhos."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Os três pastorinhos",
+      "paragraphs": [
+        "As mensagens foram entregues a três crianças pastorinhas: Lúcia dos Santos, Francisco Marto e Jacinta Marto.",
+        "Até hoje, o episódio é um dos eventos religiosos mais conhecidos da história do catolicismo."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Os ensinamentos de Fátima",
+      "paragraphs": [
+        "Os ensinamentos de Nossa Senhora de Fátima são simples, mas muito profundos: uma mensagem de amor, paz e esperança, convidando as pessoas a se aproximarem mais de Deus por meio da oração e da fé.",
+        "Um dos pedidos mais conhecidos foi a oração do rosário, vista como um caminho de conforto e fortalecimento espiritual.",
+        "Nossa Senhora também falou sobre a importância da conversão do coração, incentivando as pessoas a viverem com mais bondade, humildade e perdão.",
+        "Sua mensagem lembrava que pequenas atitudes de amor e solidariedade podem transformar a vida das pessoas e tornar o mundo mais pacífico."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Contexto histórico (1917)",
+      "paragraphs": [
+        "A aparição de Nossa Senhora de Fátima aconteceu em 1917, durante a Primeira Guerra Mundial, um período de muita violência, medo e sofrimento na Europa.",
+        "Em Portugal, também havia crises políticas e conflitos entre o governo e a Igreja Católica, deixando a população insegura e dividida.",
+        "Foi nesse contexto que, em Fátima, três crianças pastorinhas disseram ter visto Nossa Senhora, trazendo uma mensagem de esperança em meio às dificuldades daquele tempo.",
+        "Para muitos fiéis, Nossa Senhora apareceu como uma mãe acolhedora, mostrando que mesmo nos momentos difíceis é possível encontrar paz, confiança e consolo na fé."
+      ]
+    }
+  ]
+}
+

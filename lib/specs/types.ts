@@ -134,6 +134,11 @@ export const nossaSenhoraDasDoresContentSchema = contentPageSchema.extend({
   sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
 })
 
+export const nossaSenhoraDeFatimaContentSchema = contentPageSchema.extend({
+  slug: z.literal('nossa-senhora-de-fatima'),
+  sections: z.array(z.union([cardSectionSchema, quoteBlockSchema])),
+})
+
 
 export const titulosNossaSenhoraTemplateContentSchema = contentPageSchema.extend({
   slug: z.literal('titulos-nossa-senhora-template'),
@@ -300,6 +305,7 @@ export type NossaSenhoraDaComunicacaoContent = z.infer<
   typeof nossaSenhoraDaComunicacaoContentSchema
 >
 export type NossaSenhoraDasDoresContent = z.infer<typeof nossaSenhoraDasDoresContentSchema>
+export type NossaSenhoraDeFatimaContent = z.infer<typeof nossaSenhoraDeFatimaContentSchema>
 export type PerseverancaContent = z.infer<typeof perseverancaContentSchema>
 export type TitulosNossaSenhoraTemplateContent = z.infer<
   typeof titulosNossaSenhoraTemplateContentSchema
@@ -322,6 +328,7 @@ export type ContentSlug =
   | 'nossa-senhora-das-gracas'
   | 'nossa-senhora-da-comunicacao'
   | 'nossa-senhora-das-dores'
+  | 'nossa-senhora-de-fatima'
   | 'titulos-nossa-senhora-template'
   | 'ministerios'
   | 'perseveranca'
@@ -340,6 +347,7 @@ const contentSchemas = {
   'nossa-senhora-das-gracas': nossaSenhoraDasGracasContentSchema,
   'nossa-senhora-da-comunicacao': nossaSenhoraDaComunicacaoContentSchema,
   'nossa-senhora-das-dores': nossaSenhoraDasDoresContentSchema,
+  'nossa-senhora-de-fatima': nossaSenhoraDeFatimaContentSchema,
   'titulos-nossa-senhora-template': titulosNossaSenhoraTemplateContentSchema,
   ministerios: ministeriosContentSchema,
   perseveranca: perseverancaContentSchema,

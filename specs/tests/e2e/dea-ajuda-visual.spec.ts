@@ -2,7 +2,10 @@ import { expect, test } from '@playwright/test'
 
 test.describe('DEA Ajuda — regressão visual aprovada', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/ministerios/dea-ajuda')
+    await page.goto('/ministerios/dea-ajuda', {
+      waitUntil: 'domcontentloaded',
+      timeout: 60_000,
+    })
   })
 
   test('hero com título DEA Ajuda', async ({ page }) => {
