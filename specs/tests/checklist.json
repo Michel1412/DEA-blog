@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -19,6 +19,11 @@
     {
       "id": "nav-mobile-menu",
       "description": "Menu mobile expansível permite navegar para todas as rotas",
+      "category": "navigation"
+    },
+    {
+      "id": "nav-scroll-overflow",
+      "description": "Dropdown desktop e menu mobile permitem rolagem vertical com barra invisível quando a lista excede a altura da tela",
       "category": "navigation"
     },
     {

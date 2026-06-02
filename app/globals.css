@@ -73,6 +73,17 @@
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
   }
 
+  .nav-scroll-invisible {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav-scroll-invisible::-webkit-scrollbar {
+    display: none;
+  }
+
   @keyframes hero-carousel-fade {
     0%,
     100% {

@@ -39,7 +39,10 @@ export function NavDropdown({ item }: NavDropdownProps) {
       </Link>
 
       <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all z-50">
-        <div className="min-w-[220px] rounded-xl border border-[rgba(212,175,55,0.2)] bg-[#1c1e24] py-2 shadow-lg">
+        <div
+          className="nav-scroll-invisible max-h-[min(70vh,calc(100dvh-5rem))] min-w-[220px] rounded-xl border border-[rgba(212,175,55,0.2)] bg-[#1c1e24] py-2 shadow-lg"
+          data-testid="nav-dropdown-scroll"
+        >
           {item.children.map((child) => {
             const childActive = pathname === child.path
             return (

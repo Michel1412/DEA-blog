@@ -63,7 +63,10 @@ export function Navbar({ routes }: NavbarProps) {
           aria-label="Navegação mobile"
           data-testid="nav-mobile"
         >
-          <div className="mx-auto max-w-[1100px] w-[92%] py-4 space-y-2">
+          <div
+            className="nav-scroll-invisible mx-auto max-h-[calc(100dvh-4.5rem)] max-w-[1100px] w-[92%] space-y-2 py-4"
+            data-testid="nav-mobile-scroll"
+          >
             {navTree.map((item) => {
               const isActive = isNavItemActive(pathname, item.path)
 

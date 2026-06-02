@@ -34,6 +34,7 @@ alwaysApply: false
 | 0.1.5 | Carrossel no hero do DEA Ajuda + regra | `/ministerios/dea-ajuda` |
 | 0.1.6 | Nossa Senhora de Fátima | `/titulos-nossa-senhora/nossa-senhora-de-fatima` |
 | 1.0.0 | Primeira versão completa — remoção de páginas-modelo públicas; exemplo em `.cursor/examples/content-page/` | — |
+| 1.0.1 | Scroll invisível no menu (dropdown desktop + mobile) | — |
 
 A partir de **1.0.0**, não existem rotas `/titulos-nossa-senhora/template` nem `/ministerios/template` no site.
 
