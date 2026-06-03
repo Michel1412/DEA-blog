@@ -1,0 +1,52 @@
+---
+description: Remote video embed — YouTube and Google Drive URLs via iframe
+globs: components/ui/RemoteVideoEmbed.tsx, lib/video/**, specs/content/**, components/ministry-landing/MinistryLandingVideo.tsx
+alwaysApply: false
+---
+
+# CorpusCriste — Vídeos por URL
+
+## Componente padrão
+
+- **`RemoteVideoEmbed`** (`components/ui/RemoteVideoEmbed.tsx`) — recebe apenas `url` e `title`
+- Parser: **`parseVideoUrl`** (`lib/video/parseVideoUrl.ts`) — sem dependências de player
+
+## URLs de referência (exemplos aprovados)
+
+| Provedor | URL de exemplo |
+|----------|----------------|
+| YouTube | `https://youtu.be/WMXu-1avNvQ?si=r0ac31REH-ELsOH6` |
+| Google Drive | `https://drive.google.com/file/d/17V-6ojgFDKhmWY6nP3JDV7VrPpyAFt7W/view?usp=sharing` |
+
+## Formatos aceitos
+
+**YouTube:** `youtu.be/{id}`, `youtube.com/watch?v=`, `youtube.com/embed/`, `youtube.com/shorts/`
+
+**Google Drive:** `drive.google.com/file/d/{id}/...` → embed `.../file/d/{id}/preview`
+
+O arquivo no Drive deve estar compartilhado (ex.: qualquer pessoa com o link) para o iframe funcionar.
+
+## JSON (ministry landing)
+
+```json
+"video": {
+  "title": "...",
+  "titleHighlight": "...",
+  "description": "...",
+  "url": "https://youtu.be/..."
+}
+```
+
+`video.url` é validado por Zod (`parseVideoUrl` não pode retornar `null`).
+
+## O que NÃO fazer
+
+- Adicionar video.js, react-player ou players pesados
+- Hospedar MP4 em `public/` para esta feature
+- Duplicar o container visual (`aspect-video`, borda dourada) fora de `MinistryLandingVideo`
+
+## Testes
+
+- `npm run test:video` — parser (URLs de exemplo acima)
+- `npm run test:specs` — Zod no JSON
+- E2E DEA Ajuda — `data-testid="remote-video-embed"` + iframe

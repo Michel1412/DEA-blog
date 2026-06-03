@@ -2,7 +2,7 @@
 
 Site institucional do Grupo Deus É Amor, construído com **Next.js 16**, **React 19** e **Tailwind CSS 4**. O conteúdo e os testes são versionados na pasta `specs/`.
 
-**Versão atual do conteúdo:** `1.0.1` — ver [`specs/spec-1.0.1.md`](specs/spec-1.0.1.md).
+**Versão atual do conteúdo:** `1.1.0` — ver [`specs/spec-1.1.0.md`](specs/spec-1.1.0.md).
 
 ## Rotas
 
@@ -68,13 +68,15 @@ Política em [`.cursor/rules/corpus-criste-versions.mdc`](.cursor/rules/corpus-c
 | 0.1.6 | Nossa Senhora de Fátima |
 | **1.0.0** | **Versão completa** — 15 rotas; modelos só em `.cursor/examples/` |
 | 1.0.1 | Scroll invisível no menu quando a lista não cabe na tela |
+| 1.1.0 | Vídeo por URL (YouTube / Google Drive) na seção DEA Ajuda |
 
 ## Estrutura de specs
 
 ```
 specs/
 ├── version.json          # versão semver do conteúdo + specFile
-├── spec-1.0.1.md         # release notes da versão atual
+├── spec-1.1.0.md         # release notes da versão atual
+├── spec-1.0.1.md
 ├── spec-1.0.0.md
 ├── spec-0.1.6.md …       # histórico de releases
 ├── spec-0.0.0.md         # baseline
@@ -93,6 +95,7 @@ Agentes devem seguir [`.cursor/rules/`](.cursor/rules/):
 - `corpus-criste-base.mdc` — padrões gerais (always apply)
 - `corpus-criste-pages.mdc` — criação de páginas
 - `corpus-criste-carousels.mdc` — carrossel no hero (CSS)
+- `corpus-criste-videos.mdc` — vídeo por URL (YouTube / Google Drive)
 - `corpus-criste-deploy.mdc` — rotas e deploy Vercel
 - `corpus-criste-versions.mdc` — política de versionamento
 
@@ -112,6 +115,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Servidor de desenvolvimento |
 | `npm run build` | Build de produção |
 | `npm run test:specs` | Valida JSONs em `specs/` com Zod |
+| `npm run test:video` | Testes do parser de URLs de vídeo |
 | `npm run test:e2e` | Testes end-to-end (Playwright) |
 
 ## Deploy na Vercel

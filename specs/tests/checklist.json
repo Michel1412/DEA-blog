@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.1.0",
   "items": [
     {
       "id": "nav-horizontal-links",
@@ -84,6 +84,16 @@
     {
       "id": "dea-ajuda-content",
       "description": "Página DEA Ajuda contém projetos, valores e citação aprovados",
+      "category": "content"
+    },
+    {
+      "id": "dea-ajuda-video-embed",
+      "description": "Seção vídeo DEA Ajuda exibe iframe YouTube ou Google Drive a partir de video.url no JSON",
+      "category": "content"
+    },
+    {
+      "id": "video-url-parser",
+      "description": "Parser parseVideoUrl aceita URLs de exemplo YouTube e Google Drive",
       "category": "content"
     },
     {

@@ -14,6 +14,21 @@ test.describe('DEA Ajuda — regressão visual aprovada', () => {
     await expect(page.getByTestId('hero-background-carousel')).toBeVisible()
   })
 
+  test('seção vídeo com embed Google Drive', async ({ page }) => {
+    const videoSection = page.locator('#video')
+    await expect(videoSection).toBeVisible()
+    await expect(videoSection.getByText('Conheça nossa')).toBeVisible()
+
+    const embed = page.getByTestId('remote-video-embed')
+    await expect(embed).toBeVisible()
+    const iframe = embed.locator('iframe')
+    await expect(iframe).toBeVisible()
+    await expect(iframe).toHaveAttribute(
+      'src',
+      /drive\.google\.com\/file\/d\/18YZiBEn4ZjvhszcY707vQlaJxlb4o-ai\/preview/,
+    )
+  })
+
   test('projetos realizados', async ({ page }) => {
     await expect(page.getByText('Prova Rústica Tiradentes')).toBeVisible()
     await expect(page.getByText('Campanha do Agasalho')).toBeVisible()

@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { parseVideoUrl } from '@/lib/video/parseVideoUrl'
 
 export const versionSchema = z.object({
   contentVersion: z.string(),
@@ -222,7 +223,11 @@ export const ministryLandingFields = {
       title: z.string(),
       titleHighlight: z.string(),
       description: z.string(),
-      placeholder: z.string(),
+      url: z
+        .string()
+        .refine((u) => parseVideoUrl(u) !== null, {
+          message: 'video.url must be a supported YouTube or Google Drive link',
+        }),
     })
     .optional(),
   projects: z.object({

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "test:specs": "tsx scripts/validate-specs.ts",
+    "test:video": "tsx specs/tests/video-embed.unit.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {

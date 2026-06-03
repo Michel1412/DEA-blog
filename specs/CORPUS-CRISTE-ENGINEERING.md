@@ -60,7 +60,7 @@ lib/specs/            → tipos, loader, nav
 - Schema: `ministryLandingContentSchema` em `lib/specs/types.ts`
 - `page.tsx` apenas compõe seções — não duplicar markup na page.
 - Hero: título com brilho dourado (`ministryNameGlow`); sem badge circular.
-- Vídeo: opcional no JSON (DEA Ajuda sim; Perseverança não).
+- Vídeo: opcional no JSON (DEA Ajuda sim; Perseverança não). Campo `video.url` (YouTube ou Google Drive); render com `RemoteVideoEmbed` em `MinistryLandingVideo`. Ver `.cursor/rules/corpus-criste-videos.mdc`.
 
 ## Novas páginas de conteúdo
 

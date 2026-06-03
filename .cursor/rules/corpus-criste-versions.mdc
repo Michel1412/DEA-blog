@@ -35,6 +35,7 @@ alwaysApply: false
 | 0.1.6 | Nossa Senhora de Fátima | `/titulos-nossa-senhora/nossa-senhora-de-fatima` |
 | 1.0.0 | Primeira versão completa — remoção de páginas-modelo públicas; exemplo em `.cursor/examples/content-page/` | — |
 | 1.0.1 | Scroll invisível no menu (dropdown desktop + mobile) | — |
+| 1.1.0 | Vídeo por URL (YouTube / Google Drive) em DEA Ajuda | `/ministerios/dea-ajuda` |
 
 A partir de **1.0.0**, não existem rotas `/titulos-nossa-senhora/template` nem `/ministerios/template` no site.
 
